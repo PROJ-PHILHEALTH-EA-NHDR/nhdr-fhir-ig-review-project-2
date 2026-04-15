@@ -1,0 +1,150 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ConditionCodeValueSet",
+  "url": "http://example.org/fhir/ValueSet/ConditionCodeValueSet",
+  "version": "1.0.0",
+  "name": "ConditionCodeValueSet",
+  "title": "Condition Code Value Set",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-11-28",
+  "publisher": "Your Organization Name",
+  "description": "A value set representing various condition codes for classification.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/ConditionCodeSystem",
+        "concept": [
+          {
+            "code": "Abrasion",
+            "display": "Abrasion"
+          },
+          {
+            "code": "AnimalBite",
+            "display": "Animal bite"
+          },
+          {
+            "code": "Avulsion",
+            "display": "Avulsion"
+          },
+          {
+            "code": "Burn",
+            "display": "Burn"
+          },
+          {
+            "code": "OpenFracture",
+            "display": "Open fracture"
+          },
+          {
+            "code": "Crash",
+            "display": "Crash"
+          },
+          {
+            "code": "Dental",
+            "display": "Dental (caries/extraction)"
+          },
+          {
+            "code": "Fireworks",
+            "display": "Fireworks"
+          },
+          {
+            "code": "InsectBite",
+            "display": "Insect bite"
+          },
+          {
+            "code": "Laceration",
+            "display": "Laceration"
+          },
+          {
+            "code": "Puncture",
+            "display": "Puncture"
+          },
+          {
+            "code": "Surgery",
+            "display": "Surgery"
+          },
+          {
+            "code": "TissueNecrosis",
+            "display": "Tissue necrosis"
+          },
+          {
+            "code": "OthersSpecify",
+            "display": "Others, specify"
+          },
+          {
+            "code": "Abscess",
+            "display": "Abscess"
+          },
+          {
+            "code": "Ulcer",
+            "display": "Ulcer"
+          },
+          {
+            "code": "Blister",
+            "display": "Blister"
+          },
+          {
+            "code": "Gangrene",
+            "display": "Gangrene"
+          },
+          {
+            "code": "Cellulitis",
+            "display": "Cellulitis"
+          },
+          {
+            "code": "None",
+            "display": "None"
+          },
+          {
+            "code": "Hypertension",
+            "display": "Hypertension"
+          },
+          {
+            "code": "Diabetes",
+            "display": "Diabetes"
+          },
+          {
+            "code": "HeartDisease",
+            "display": "Heart Disease"
+          },
+          {
+            "code": "LungDisease",
+            "display": "Lung Disease"
+          },
+          {
+            "code": "Gastrointestinal",
+            "display": "Gastrointestinal"
+          },
+          {
+            "code": "GenitoUrinary",
+            "display": "Genito-urinary"
+          },
+          {
+            "code": "NeurologicalDisease",
+            "display": "Neurological Disease"
+          },
+          {
+            "code": "Cancer",
+            "display": "Cancer"
+          },
+          {
+            "code": "Others",
+            "display": "Others"
+          },
+          {
+            "code": "Covid19Case",
+            "display": "Covid19 Case (Suspect, Probable or Confirmed)"
+          },
+          {
+            "code": "CloseContact",
+            "display": "Close Contact"
+          },
+          {
+            "code": "ForRT_PCRTesting",
+            "display": "For RT-PCR Testing (Not a case of Close Contact)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_Organization",
+  "name": "PH_Organization",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization",
+        "path": "Organization",
+        "definition": "\"A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.\n\nAlternate Name: Health Facility Registry\""
+      },
+      {
+        "id": "Organization.extension:headName",
+        "path": "Organization.extension",
+        "sliceName": "headName",
+        "definition": "Head of the organization",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/HeadName"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Organization.extension:headPosition",
+        "path": "Organization.extension",
+        "sliceName": "headPosition",
+        "short": "Position of head of facility",
+        "definition": "Position of head of facility",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/HeadPosition"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Organization.identifier",
+        "path": "Organization.identifier",
+        "slicing": {
+          "description": "This are the slides for the DOH facility code",
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Organization.identifier:DOHfhudcode",
+        "path": "Organization.identifier",
+        "sliceName": "DOHfhudcode",
+        "short": "Health Facility Code (HFC)",
+        "definition": "Health Facility Code (HFC)",
+        "max": "1"
+      },
+      {
+        "id": "Organization.identifier:otherID",
+        "path": "Organization.identifier",
+        "sliceName": "otherID",
+        "short": "Use of other facility codes",
+        "definition": "PhilHealth Accreditation Number (PAN)\nPhilHealth Employer Number (PEN)",
+        "max": "1"
+      },
+      {
+        "id": "Organization.type",
+        "path": "Organization.type",
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://example.org/fhir/ValueSet/OrganizationTypeValueSet"
+        }
+      },
+      {
+        "id": "Organization.type.coding",
+        "path": "Organization.type.coding",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://example.org/fhir/StructureDefinition/OrganizationTypeValueSet"
+        }
+      },
+      {
+        "id": "Organization.alias",
+        "path": "Organization.alias",
+        "max": "0"
+      },
+      {
+        "id": "Organization.partOf",
+        "path": "Organization.partOf",
+        "max": "0"
+      },
+      {
+        "id": "Organization.contact",
+        "path": "Organization.contact",
+        "max": "1"
+      },
+      {
+        "id": "Organization.endpoint",
+        "path": "Organization.endpoint",
+        "max": "0"
+      }
+    ]
+  }
+}

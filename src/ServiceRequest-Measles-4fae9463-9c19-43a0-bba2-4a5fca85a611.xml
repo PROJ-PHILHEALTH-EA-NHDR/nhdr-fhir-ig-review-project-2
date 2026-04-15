@@ -1,0 +1,11 @@
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="Measles-4fae9463-9c19-43a0-bba2-4a5fca85a611" />
+  <meta>
+    <lastUpdated value="2024-12-12T03:35:51.436+00:00" />
+  </meta>
+  <status value="active" />
+  <intent value="order" />
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+</ServiceRequest>

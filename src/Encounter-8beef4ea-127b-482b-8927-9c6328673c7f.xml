@@ -1,0 +1,7 @@
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="8beef4ea-127b-482b-8927-9c6328673c7f" />
+  <meta>
+    <lastUpdated value="2024-12-10T21:58:34.129+00:00" />
+  </meta>
+  <status value="in-progress" />
+</Encounter>

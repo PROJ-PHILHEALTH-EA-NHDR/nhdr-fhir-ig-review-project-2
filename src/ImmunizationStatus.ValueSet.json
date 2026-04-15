@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ImmunizationStatus",
+  "url": "http://example.org/fhir/ValueSet/ImmunizationStatus",
+  "version": "1.0.0",
+  "name": "ImmunizationStatus",
+  "title": "Immunization Status Value Set",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-11-28",
+  "publisher": "Your Organization Name",
+  "description": "A value set representing the status of immunization.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/ImmunizationStatusCodeSystem",
+        "concept": [
+          {
+            "code": "Vaccinated",
+            "display": "Vaccinated"
+          },
+          {
+            "code": "Unvaccinated",
+            "display": "Unvaccinated"
+          },
+          {
+            "code": "Unknown",
+            "display": "Unknown"
+          },
+          {
+            "code": "Yes",
+            "display": "Yes"
+          },
+          {
+            "code": "No",
+            "display": "No"
+          }
+        ]
+      }
+    ]
+  }
+}

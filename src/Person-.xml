@@ -1,0 +1,38 @@
+<Person xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-07-18T07:21:35.241+00:00" />
+  </meta>
+  <extension url="https://example.org/fhir/StructureDefinition/Sex">
+    <valueCode value="male" />
+  </extension>
+  <name>
+    <use value="official" />
+    <family value="Garcia" />
+    <given value="Juan" />
+    <prefix value="Mr." />
+  </name>
+  <telecom>
+    <system value="phone" />
+    <value value="+1234567890" />
+    <use value="mobile" />
+  </telecom>
+  <telecom>
+    <system value="email" />
+    <value value="juan.garcia@example.org" />
+    <use value="home" />
+  </telecom>
+  <birthDate value="1990-01-01" />
+  <address>
+    <use value="home" />
+    <line value="1234 Health St." />
+    <city value="Health City" />
+    <state value="Health State" />
+    <postalCode value="12345" />
+    <country value="PH" />
+  </address>
+  <link>
+    <target>
+      <reference value="Patient/example" />
+    </target>
+  </link>
+</Person>

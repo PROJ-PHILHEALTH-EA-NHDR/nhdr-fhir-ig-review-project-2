@@ -1,0 +1,12 @@
+<Person xmlns="http://hl7.org/fhir">
+  <id value="6388a315-2cf6-4ac2-9de8-a6dba7e8906a" />
+  <meta>
+    <lastUpdated value="2024-12-10T08:52:07.402+00:00" />
+  </meta>
+  <name>
+    <use value="official" />
+    <family value="Doe" />
+    <given value="Jane" />
+  </name>
+  <birthDate value="1995-05-15" />
+</Person>

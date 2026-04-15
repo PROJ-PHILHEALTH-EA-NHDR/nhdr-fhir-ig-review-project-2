@@ -1,0 +1,59 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/Organization",
+  "name": "Organization",
+  "status": "draft",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DiagnosticReport"
+    },
+    {
+      "type": "element",
+      "expression": "Observation"
+    },
+    {
+      "type": "element",
+      "expression": "Specimen"
+    },
+    {
+      "type": "element",
+      "expression": "Procedure"
+    },
+    {
+      "type": "element",
+      "expression": "AllergyIntolerance"
+    },
+    {
+      "type": "element",
+      "expression": "MedicationStatement"
+    },
+    {
+      "type": "element",
+      "expression": "Immunization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://example.org/fhir/StructureDefinition/Organization"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

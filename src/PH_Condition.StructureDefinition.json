@@ -1,0 +1,105 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_Condition",
+  "name": "PH_Condition",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition.extension:extOrganization",
+        "path": "Condition.extension",
+        "sliceName": "extOrganization",
+        "short": "Health facility where the encounter was",
+        "definition": "Health facility where the encounter was",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Ext_Organization"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Condition.clinicalStatus.coding",
+        "path": "Condition.clinicalStatus.coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/ValueSet/ClinicalStatusValueSet"
+        }
+      },
+      {
+        "id": "Condition.verificationStatus",
+        "path": "Condition.verificationStatus",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/ValueSet/ConditionVerificationStatusValueSet"
+        }
+      },
+      {
+        "id": "Condition.category",
+        "path": "Condition.category",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://example.org/fhir/ValueSet/ConditionCategoryValueSet"
+        }
+      },
+      {
+        "id": "Condition.severity",
+        "path": "Condition.severity",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://example.org/fhir/ValueSet/ConditionSeverityValueSet"
+        }
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://example.org/fhir/ValueSet/ConditionCodeValueSet"
+        }
+      },
+      {
+        "id": "Condition.bodySite",
+        "path": "Condition.bodySite",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://example.org/fhir/ValueSet/ConditionBodySiteValueSet"
+        }
+      },
+      {
+        "id": "Condition.abatement[x]",
+        "path": "Condition.abatement[x]",
+        "max": "0"
+      },
+      {
+        "id": "Condition.recorder",
+        "path": "Condition.recorder",
+        "max": "0"
+      },
+      {
+        "id": "Condition.asserter",
+        "path": "Condition.asserter",
+        "max": "0"
+      },
+      {
+        "id": "Condition.stage",
+        "path": "Condition.stage",
+        "max": "0"
+      },
+      {
+        "id": "Condition.evidence",
+        "path": "Condition.evidence",
+        "max": "0"
+      }
+    ]
+  }
+}

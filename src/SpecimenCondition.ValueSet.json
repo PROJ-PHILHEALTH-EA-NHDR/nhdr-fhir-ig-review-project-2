@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SpecimenCondition",
+  "url": "http://example.org/fhir/ValueSet/SpecimenCondition",
+  "version": "1.0.0",
+  "name": "SpecimenCondition",
+  "title": "Specimen Condition Value Set",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-11-28",
+  "publisher": "Your Organization Name",
+  "description": "A value set representing the condition of a specimen.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/SpecimenConditionCodeSystem",
+        "concept": [
+          {
+            "code": "Frozen",
+            "display": "Frozen"
+          },
+          {
+            "code": "ThawedButCold",
+            "display": "Thawed but cold"
+          },
+          {
+            "code": "Warm",
+            "display": "Warm"
+          },
+          {
+            "code": "Positive",
+            "display": "Positive"
+          },
+          {
+            "code": "Negative",
+            "display": "Negative"
+          },
+          {
+            "code": "Undetermined",
+            "display": "Undetermined"
+          },
+          {
+            "code": "NotProcessed",
+            "display": "Not Processed"
+          }
+        ]
+      }
+    ]
+  }
+}

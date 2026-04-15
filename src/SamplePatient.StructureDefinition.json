@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/SamplePatient",
+  "name": "SamplePatient",
+  "status": "draft",
+  "description": "This is a sample patient",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.extension:fatherName",
+        "path": "Patient.extension",
+        "sliceName": "fatherName",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/FatherName"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:sibling",
+        "path": "Patient.extension",
+        "sliceName": "sibling",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Sibling"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.active",
+        "path": "Patient.active",
+        "max": "0"
+      },
+      {
+        "id": "Patient.telecom",
+        "path": "Patient.telecom",
+        "max": "0"
+      }
+    ]
+  }
+}

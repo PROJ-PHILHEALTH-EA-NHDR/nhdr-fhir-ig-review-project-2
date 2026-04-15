@@ -1,0 +1,134 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_MedicationAdministration",
+  "name": "PH_MedicationAdministration",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationAdministration",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationAdministration.extension:extOrganization",
+        "path": "MedicationAdministration.extension",
+        "sliceName": "extOrganization",
+        "short": "The health facility code where the medication was administered.",
+        "definition": "The health facility code where the medication was administered.",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Ext_Organization"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "MedicationAdministration.extension:extEncounter",
+        "path": "MedicationAdministration.extension",
+        "sliceName": "extEncounter",
+        "short": "The encounter when the medicine was consumed or administered.",
+        "definition": "The encounter when the medicine was consumed or administered.",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/ExtEncounter"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "MedicationAdministration.extension:recordedDate",
+        "path": "MedicationAdministration.extension",
+        "sliceName": "recordedDate",
+        "short": "The recordedDate represents when this particular Medication Administration record was uploaded into the NHDR.",
+        "definition": "The recordedDate represents when this particular Medication Administration record was uploaded into the NHDR.",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/RecordedDate"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "MedicationAdministration.instantiates",
+        "path": "MedicationAdministration.instantiates",
+        "max": "0"
+      },
+      {
+        "id": "MedicationAdministration.partOf",
+        "path": "MedicationAdministration.partOf",
+        "max": "0"
+      },
+      {
+        "id": "MedicationAdministration.status",
+        "path": "MedicationAdministration.status",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/ValueSet/MedicalAdministrationStatus"
+        }
+      },
+      {
+        "id": "MedicationAdministration.statusReason",
+        "path": "MedicationAdministration.statusReason",
+        "max": "0"
+      },
+      {
+        "id": "MedicationAdministration.category",
+        "path": "MedicationAdministration.category",
+        "max": "0"
+      },
+      {
+        "id": "MedicationAdministration.context",
+        "path": "MedicationAdministration.context",
+        "max": "0"
+      },
+      {
+        "id": "MedicationAdministration.supportingInformation",
+        "path": "MedicationAdministration.supportingInformation",
+        "max": "0"
+      },
+      {
+        "id": "MedicationAdministration.performer",
+        "path": "MedicationAdministration.performer",
+        "max": "0"
+      },
+      {
+        "id": "MedicationAdministration.reasonCode",
+        "path": "MedicationAdministration.reasonCode",
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.reasonReference",
+        "path": "MedicationAdministration.reasonReference",
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.dosage",
+        "path": "MedicationAdministration.dosage",
+        "definition": "Indicates how the medication is/was or should be taken by the patient."
+      },
+      {
+        "id": "MedicationAdministration.dosage.extension",
+        "path": "MedicationAdministration.dosage.extension",
+        "max": "0"
+      },
+      {
+        "id": "MedicationAdministration.eventHistory",
+        "path": "MedicationAdministration.eventHistory",
+        "max": "0"
+      }
+    ]
+  }
+}

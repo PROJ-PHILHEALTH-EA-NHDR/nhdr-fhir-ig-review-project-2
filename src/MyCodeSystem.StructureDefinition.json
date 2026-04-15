@@ -1,0 +1,48 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/MyCodeSystem",
+  "name": "MyCodeSystem",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CodeSystem",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CodeSystem",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CodeSystem.name",
+        "path": "CodeSystem.name",
+        "fixedString": "Gender"
+      },
+      {
+        "id": "CodeSystem.copyright",
+        "path": "CodeSystem.copyright",
+        "comment": "Systems are not required to have markdown support, so the text should be readable without markdown processing. The markdown syntax is GFM - see https://github.github.com/gfm/\r\n Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required.\r\n Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required.\r\n Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required."
+      },
+      {
+        "id": "CodeSystem.concept",
+        "path": "CodeSystem.concept",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resolve()"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "CodeSystem.concept:Male",
+        "path": "CodeSystem.concept",
+        "sliceName": "Male"
+      },
+      {
+        "id": "CodeSystem.concept:Female",
+        "path": "CodeSystem.concept",
+        "sliceName": "Female"
+      }
+    ]
+  }
+}

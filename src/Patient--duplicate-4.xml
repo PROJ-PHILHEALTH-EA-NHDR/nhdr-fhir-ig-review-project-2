@@ -1,0 +1,15 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-07-15T05:31:19.241+00:00" />
+  </meta>
+  <identifier>
+    <system value="http://acme.org/mrns" />
+    <value value="12345" />
+  </identifier>
+  <name>
+    <family value="Jameson" />
+    <given value="P" />
+    <given value="Marcus" />
+  </name>
+  <gender value="male" />
+</Patient>

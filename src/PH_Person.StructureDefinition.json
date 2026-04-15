@@ -1,0 +1,52 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_Person",
+  "name": "PH_Person",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Person",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Person",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Person.extension:sex",
+        "path": "Person.extension",
+        "sliceName": "sex",
+        "short": "Sex assigned at birth",
+        "definition": "The sex assigned at birth, as documented on the birth registration",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Sex"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Person.gender",
+        "path": "Person.gender",
+        "max": "0"
+      },
+      {
+        "id": "Person.photo",
+        "path": "Person.photo",
+        "max": "0"
+      },
+      {
+        "id": "Person.managingOrganization",
+        "path": "Person.managingOrganization",
+        "max": "0"
+      },
+      {
+        "id": "Person.active",
+        "path": "Person.active",
+        "max": "0"
+      }
+    ]
+  }
+}

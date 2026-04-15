@@ -1,0 +1,28 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-07-18T06:13:47.993+00:00" />
+  </meta>
+  <identifier>
+    <use value="PRC" />
+    <value value="12345" />
+  </identifier>
+  <name>
+    <extension url="https://example.org/fhir/StructureDefinition/MiddleName">
+      <valueString value="Rizal" />
+    </extension>
+    <use value="official" />
+    <family value="Dela Cruz" />
+    <given value="Juan" />
+    <given value="Pedro" />
+    <given value="Santos" />
+  </name>
+  <telecom>
+    <system value="phone" />
+    <value value="(03) 5555 6473" />
+  </telecom>
+  <telecom>
+    <system value="phone" />
+    <value value="(0939) 929 3814" />
+    <use value="mobile" />
+  </telecom>
+</Practitioner>

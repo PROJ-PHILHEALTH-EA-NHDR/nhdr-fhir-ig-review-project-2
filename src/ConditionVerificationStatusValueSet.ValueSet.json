@@ -1,0 +1,142 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ConditionVerificationStatusValueSet",
+  "url": "http://example.org/fhir/ValueSet/ConditionVerificationStatusValueSet",
+  "version": "1.0.0",
+  "name": "ConditionVerificationStatusValueSet",
+  "title": "Condition Verification Status Value Set",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-11-28",
+  "publisher": "Your Organization Name",
+  "description": "A value set representing verification status codes for conditions, particularly for diseases like JE, measles, rubella, polio, and others.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/ConditionVerificationStatusCodeSystem",
+        "concept": [
+          {
+            "code": "Suspect",
+            "display": "Suspect"
+          },
+          {
+            "code": "Probable",
+            "display": "Probable"
+          },
+          {
+            "code": "Confirmed",
+            "display": "Confirmed"
+          },
+          {
+            "code": "NonCovid19Case",
+            "display": "Non Covid-19 Case"
+          },
+          {
+            "code": "LaboratoryConfirmedJE",
+            "display": "Laboratory confirmed JE"
+          },
+          {
+            "code": "JE",
+            "display": "JE"
+          },
+          {
+            "code": "AESOtherAgent",
+            "display": "AES other agent"
+          },
+          {
+            "code": "AESUnknown",
+            "display": "AES unknown"
+          },
+          {
+            "code": "LaboratoryConfirmedMeasles",
+            "display": "Laboratory Confirmed Measles"
+          },
+          {
+            "code": "EpiLinkedConfirmedMeasles",
+            "display": "Epi-linked Confirmed Measles"
+          },
+          {
+            "code": "MeaslesCompatible",
+            "display": "Measles Compatible"
+          },
+          {
+            "code": "LaboratoryConfirmedRubella",
+            "display": "Laboratory Confirmed Rubella"
+          },
+          {
+            "code": "EpiLinkedConfirmedRubella",
+            "display": "Epi-linked Confirmed Rubella"
+          },
+          {
+            "code": "DiscardedNonMeaslesRubella",
+            "display": "Discarded Non Measles/Rubella"
+          },
+          {
+            "code": "ConfirmedWildPolio",
+            "display": "Confirmed wild polio"
+          },
+          {
+            "code": "VaccineDerivedParalyticPolio",
+            "display": "Vaccine-derived paralytic polio (VDPV)"
+          },
+          {
+            "code": "VaccineAssociatedParalyticPolio",
+            "display": "Vaccine-associated paralytic polio (VAPP)"
+          },
+          {
+            "code": "RecipientVAPP",
+            "display": "Recipient VAPP"
+          },
+          {
+            "code": "ContactVAPP",
+            "display": "Contact VAPP"
+          },
+          {
+            "code": "PolioCompatible",
+            "display": "Polio compatible"
+          },
+          {
+            "code": "DiscardedAsNonPolio",
+            "display": "Discarded as Non-Polio"
+          },
+          {
+            "code": "Laboratory",
+            "display": "Laboratory"
+          },
+          {
+            "code": "LostToFollowUp",
+            "display": "Lost to follow-up"
+          },
+          {
+            "code": "Death",
+            "display": "Death"
+          },
+          {
+            "code": "WithResidualParalysis",
+            "display": "With residual paralysis"
+          },
+          {
+            "code": "WithoutResidualParalysis",
+            "display": "Without residual paralysis"
+          },
+          {
+            "code": "LabConfirmed",
+            "display": "Lab Confirmed"
+          },
+          {
+            "code": "EpiLinked",
+            "display": "EPI linked"
+          },
+          {
+            "code": "ClinicallyCompatible",
+            "display": "Clinically compatible"
+          },
+          {
+            "code": "Discarded",
+            "display": "Discarded"
+          }
+        ]
+      }
+    ]
+  }
+}

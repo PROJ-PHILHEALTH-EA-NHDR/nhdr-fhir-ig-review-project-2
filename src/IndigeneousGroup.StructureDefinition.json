@@ -1,0 +1,44 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/IndigeneousGroup",
+  "name": "IndigeneousGroup",
+  "status": "draft",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://example.org/fhir/StructureDefinition/IndigeneousGroup"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].coding",
+        "path": "Extension.value[x].coding",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet",
+          "valueSet": "https://example.org/fhir/StructureDefinition/IndigenousGroupValueSet"
+        }
+      }
+    ]
+  }
+}

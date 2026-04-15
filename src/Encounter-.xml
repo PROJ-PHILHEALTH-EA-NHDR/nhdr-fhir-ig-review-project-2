@@ -1,0 +1,111 @@
+<Encounter xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-07-18T06:52:48.696+00:00" />
+    <profile value="https://example.org/fhir/StructureDefinition/PH_Encounter" />
+  </meta>
+  <extension url="https://example.org/fhir/StructureDefinition/AgeYears">
+    <valueInteger value="30" />
+  </extension>
+  <extension url="https://example.org/fhir/StructureDefinition/AgeMonths">
+    <valueInteger value="0" />
+  </extension>
+  <extension url="https://example.org/fhir/StructureDefinition/AgeDays">
+    <valueInteger value="0" />
+  </extension>
+  <extension url="https://example.org/fhir/StructureDefinition/PatientClassification">
+    <valueString value="Inpatient" />
+  </extension>
+  <extension url="https://example.org/fhir/StructureDefinition/Interviewer">
+    <valueHumanName>
+      <use value="official" />
+      <family value="Santos" />
+      <given value="Maria" />
+      <prefix value="Ms." />
+    </valueHumanName>
+  </extension>
+  <extension url="https://example.org/fhir/StructureDefinition/InvestigatorName">
+    <valueHumanName>
+      <use value="official" />
+      <family value="Reyes" />
+      <given value="Juan" />
+      <prefix value="Dr." />
+    </valueHumanName>
+  </extension>
+  <extension url="https://example.org/fhir/StructureDefinition/DateInterview">
+    <valueDateTime value="2024-07-18T08:00:00+08:00" />
+  </extension>
+  <extension url="https://example.org/fhir/StructureDefinition/DateInvestigation">
+    <valueDateTime value="2024-07-19T10:00:00+08:00" />
+  </extension>
+  <extension url="https://example.org/fhir/StructureDefinition/ReporterName">
+    <valueHumanName>
+      <use value="official" />
+      <family value="Dela Cruz" />
+      <given value="Luis" />
+      <prefix value="Mr." />
+    </valueHumanName>
+  </extension>
+  <identifier>
+    <use value="official" />
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="FI" />
+        <display value="Philhealth code" />
+      </coding>
+    </type>
+    <system value="http://example.org/fhir/philHealthID" />
+    <value value="PH123456" />
+  </identifier>
+  <identifier>
+    <use value="secondary" />
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="COVID" />
+        <display value="COVID Data ID" />
+      </coding>
+    </type>
+    <system value="http://example.org/fhir/covidDataID" />
+    <value value="COVID78910" />
+  </identifier>
+  <identifier>
+    <use value="secondary" />
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="COVIDPT" />
+        <display value="COVID Patient ID" />
+      </coding>
+    </type>
+    <system value="http://example.org/fhir/covidPatientID" />
+    <value value="COVIDPT112233" />
+  </identifier>
+  <status value="finished" />
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+    <code value="AMB" />
+    <display value="ambulatory" />
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="183452005" />
+      <display value="General examination of patient (procedure)" />
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/example" />
+  </subject>
+  <period>
+    <start value="2024-07-18T08:00:00+08:00" />
+    <end value="2024-07-18T10:00:00+08:00" />
+  </period>
+  <location>
+    <location>
+      <reference value="Location/example" />
+      <display value="General Hospital Room" />
+    </location>
+    <status value="completed" />
+  </location>
+</Encounter>

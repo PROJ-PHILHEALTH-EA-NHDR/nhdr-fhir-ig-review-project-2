@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "id": "OrganizationTypeValueSet",
+  "url": "https://example.org/fhir/ValueSet/OrganizationTypeValueSet",
+  "name": "OrganizationTypeValueSet",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/organization-type-codes",
+        "concept": [
+          {
+            "code": "RuralHealthUnit",
+            "display": "Rural Health Unit"
+          },
+          {
+            "code": "CityHealthOffice",
+            "display": "City Health Office"
+          },
+          {
+            "code": "MunicipalHealthOffice",
+            "display": "Municipal Health Office"
+          },
+          {
+            "code": "ProvincialHealthOffice",
+            "display": "Provincial Health Office"
+          },
+          {
+            "code": "GovernmentHospital",
+            "display": "Government Hospital"
+          },
+          {
+            "code": "PrivateHospital",
+            "display": "Private Hospital"
+          },
+          {
+            "code": "Clinic",
+            "display": "Clinic"
+          },
+          {
+            "code": "PrivateLaboratory",
+            "display": "Private Laboratory"
+          },
+          {
+            "code": "PublicLaboratory",
+            "display": "Public Laboratory"
+          },
+          {
+            "code": "SeaportAirport",
+            "display": "Seaport/Airport"
+          },
+          {
+            "code": "Others",
+            "display": "Others"
+          }
+        ]
+      }
+    ]
+  }
+}

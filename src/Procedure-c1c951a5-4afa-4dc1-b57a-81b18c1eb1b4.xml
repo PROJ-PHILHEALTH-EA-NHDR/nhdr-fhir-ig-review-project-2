@@ -1,0 +1,21 @@
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="c1c951a5-4afa-4dc1-b57a-81b18c1eb1b4" />
+  <meta>
+    <lastUpdated value="2024-12-10T14:28:43.739+00:00" />
+  </meta>
+  <status value="completed" />
+  <code>
+    <coding>
+      <system value="http://example.org/fhir/ValueSet/ProcedureCodeValueSet" />
+      <code value="12345" />
+      <display value="Appendectomy" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+  <performedPeriod>
+    <start value="2024-12-05T08:00:00+08:00" />
+    <end value="2024-12-05T10:00:00+08:00" />
+  </performedPeriod>
+</Procedure>

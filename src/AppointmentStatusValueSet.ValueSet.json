@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "id": "AppointmentStatusValueSet",
+  "url": "https://example.org/fhir/ValueSet/AppointmentStatusValueSet",
+  "name": "AppointmentStatusValueSet",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/appointment-status-codes",
+        "concept": [
+          {
+            "code": "yes",
+            "display": "Yes"
+          },
+          {
+            "code": "no",
+            "display": "No"
+          }
+        ]
+      }
+    ]
+  }
+}

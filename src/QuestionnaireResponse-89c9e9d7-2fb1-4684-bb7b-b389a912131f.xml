@@ -1,0 +1,17 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="89c9e9d7-2fb1-4684-bb7b-b389a912131f" />
+  <meta>
+    <lastUpdated value="2024-12-10T13:48:50.596+00:00" />
+  </meta>
+  <status value="completed" />
+  <subject>
+    <reference value="Person/d9ab57ae-ca9c-47df-81bf-1b5ef122d231" />
+  </subject>
+  <item>
+    <linkId value="philhealth-member" />
+    <text value="Is a PhilHealth member?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+</QuestionnaireResponse>

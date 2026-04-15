@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "id": "EncounterTypeValueSet",
+  "url": "https://example.org/fhir/ValueSet/EncounterTypeValueSet",
+  "name": "EncounterTypeValueSet",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/encounter-type-codes",
+        "concept": [
+          {
+            "code": "NewCaseNotApplicable",
+            "display": "Not Applicable (New case)"
+          },
+          {
+            "code": "UnknownNotApplicable",
+            "display": "Not Applicable (Unknown)"
+          },
+          {
+            "code": "UpdateSymptoms",
+            "display": "Update Symptoms"
+          },
+          {
+            "code": "UpdateHealthStatus",
+            "display": "Update Health Status/Outcome"
+          },
+          {
+            "code": "UpdateCaseClassification",
+            "display": "Update Case Classification"
+          },
+          {
+            "code": "UpdateVaccination",
+            "display": "Update Vaccination"
+          },
+          {
+            "code": "UpdateLabResult",
+            "display": "Update Lab Result"
+          },
+          {
+            "code": "UpdateDisposition",
+            "display": "Update Disposition"
+          },
+          {
+            "code": "UpdateChestImagingFindings",
+            "display": "Update Chest Imaging Findings"
+          },
+          {
+            "code": "UpdateExposureTravelHistory",
+            "display": "Update Exposure/Travel History"
+          },
+          {
+            "code": "OthersSpecify",
+            "display": "Others, Specify"
+          }
+        ]
+      }
+    ]
+  }
+}

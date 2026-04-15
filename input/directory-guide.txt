@@ -1,0 +1,16 @@
+  Directory:
+  - fsh/examples    = contains fsh file of examples/instances
+  - fsh/extensions  = contains fsh files of extensions
+  - fsh/profiles    = contains fsh files of custom profiles
+  - fsh/vocabulary  = contains fsh files of CodeSystems and ValueSets
+  - /includes       = contains reusable code blocks
+  - /intro-notes    = contains -intro and -notes files
+  - /pagecontent    = contains md files for IG pages
+  - aliases.fsh     = contains a list of aliases
+  - rulesets.fsh    = contains rulesets
+
+
+  Notes:
+    *-intro.md        = attach [filename] to top of content
+    *-notes.md        = attach [filename] below content
+    {% include * -%}  = insert [filename] from /includes

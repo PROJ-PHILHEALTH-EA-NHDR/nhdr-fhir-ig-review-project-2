@@ -1,0 +1,14 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="8245f125-c299-4bec-89d7-3381843189e8" />
+  <meta>
+    <lastUpdated value="2024-12-10T14:28:44.132+00:00" />
+  </meta>
+  <status value="completed" />
+  <item>
+    <linkId value="referral" />
+    <text value="Was the patient referred by another HCI?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+</QuestionnaireResponse>

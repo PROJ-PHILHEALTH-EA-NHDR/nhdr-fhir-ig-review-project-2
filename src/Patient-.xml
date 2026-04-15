@@ -1,0 +1,58 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-07-12T14:07:16.250+00:00" />
+    <profile value="https://fake-acme.org/fhir/StructureDefinition/ACME-base-patient" />
+  </meta>
+  <implicitRules value="http://hl7.org/fhir/reference" />
+  <language value="en-IN" />
+  <text>
+    <status value="extensions" />
+    <div xmlns="http://www.w3.org/1999/xhtml">Hello world!</div>
+  </text>
+  <identifier>
+    <use value="usual" />
+    <system value="http://www.acme.com/identifiers/patient" />
+    <value value="123456" />
+  </identifier>
+  <active value="true" />
+  <name>
+    <use value="official" />
+    <text value="Example Patient" />
+    <family value="Patient" />
+    <given value="Example" />
+  </name>
+  <telecom>
+    <system value="phone" />
+    <value value="abc" />
+    <use value="home" />
+  </telecom>
+  <gender value="other" />
+  <deceasedBoolean value="false" />
+  <address>
+    <use value="home" />
+    <type value="both" />
+    <text value="137 Nowhere Street, Erewhon 9132" />
+    <line value="137 Nowhere Street" />
+    <city value="Erewhon" />
+    <district value="Madison" />
+    <state value="abc" />
+    <postalCode value="9132" />
+    <country value="abc" />
+  </address>
+  <maritalStatus>
+    <text value="abc" />
+  </maritalStatus>
+  <multipleBirthBoolean value="false" />
+  <photo>
+    <contentType value="text/plain; charset=UTF-8, image/png" />
+    <language value="en-AU" />
+    <url value="http://www.acme.com/logo-small.png" />
+    <size value="1037423195" />
+    <title value="Official Corporate Logo" />
+    <creation value="1984-05-06T14:42:00+00:00" />
+  </photo>
+  <managingOrganization>
+    <reference value="abc" />
+    <display value="abc" />
+  </managingOrganization>
+</Patient>

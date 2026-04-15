@@ -1,0 +1,38 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="COVID-3c3a4ffc-a4d4-4502-b935-7fb1c3f371d9" />
+  <meta>
+    <lastUpdated value="2024-12-12T04:30:08.519+00:00" />
+  </meta>
+  <status value="completed" />
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+  <item>
+    <linkId value="1" />
+    <text value="Has the specimen been sent to RITM?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+  <item>
+    <linkId value="2" />
+    <text value="Does the patient have a fever, cough, or difficulty breathing?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+  <item>
+    <linkId value="3" />
+    <text value="Has the patient been in close contact with a confirmed COVID-19 case?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+  <item>
+    <linkId value="4" />
+    <text value="Has the patient experienced loss of taste or smell?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+</QuestionnaireResponse>

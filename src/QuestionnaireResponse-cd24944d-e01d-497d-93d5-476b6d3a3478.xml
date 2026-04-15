@@ -1,0 +1,11 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="cd24944d-e01d-497d-93d5-476b6d3a3478" />
+  <meta>
+    <lastUpdated value="2024-12-10T21:44:28.880+00:00" />
+  </meta>
+  <questionnaire value="https://example.org/Questionnaire/Example3" />
+  <status value="completed" />
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+</QuestionnaireResponse>

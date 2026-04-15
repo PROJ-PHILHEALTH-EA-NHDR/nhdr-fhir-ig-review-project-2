@@ -1,0 +1,17 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-12-10T13:41:21.790+00:00" />
+  </meta>
+  <status value="completed" />
+  <subject>
+    <reference value="Person/pedro-san-juan" />
+    <display value="Pedro San Juan" />
+  </subject>
+  <item>
+    <linkId value="philhealth-member" />
+    <text value="Is a PhilHealth member?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+</QuestionnaireResponse>

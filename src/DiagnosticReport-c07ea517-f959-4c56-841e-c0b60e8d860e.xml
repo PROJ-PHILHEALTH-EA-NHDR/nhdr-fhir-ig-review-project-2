@@ -1,0 +1,39 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="c07ea517-f959-4c56-841e-c0b60e8d860e" />
+  <meta>
+    <lastUpdated value="2024-12-11T05:00:31.836+00:00" />
+  </meta>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
+      <code value="LAB" />
+      <display value="Laboratory" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="29965-3" />
+      <display value="Rabies virus antibody test" />
+    </coding>
+    <text value="Rabies Virus Antibody Test" />
+  </code>
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+  <specimen>
+    <reference value="Specimen/7994709b-4350-4f91-b06f-4da782993a8b" />
+  </specimen>
+  <result>
+    <reference value="Observation/b8b94d0f-3461-4cb3-a7d9-365482f2e24a" />
+  </result>
+  <conclusion value="Positive for rabies virus antibodies" />
+  <conclusionCode>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="422080000" />
+      <display value="Rabies virus infection" />
+    </coding>
+  </conclusionCode>
+</DiagnosticReport>

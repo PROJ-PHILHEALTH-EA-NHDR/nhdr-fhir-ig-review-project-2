@@ -1,0 +1,9 @@
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="173fc191-d8f5-4342-b678-8a282effe96d" />
+  <meta>
+    <lastUpdated value="2024-12-10T21:44:29.157+00:00" />
+  </meta>
+  <code>
+    <text value="Amoxicillin 500mg Capsule" />
+  </code>
+</Medication>

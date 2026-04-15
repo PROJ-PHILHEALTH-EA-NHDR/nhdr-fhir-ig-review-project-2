@@ -1,0 +1,7 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="4140bf45-3fc0-49b7-87da-34ab57f4bbd7" />
+  <meta>
+    <lastUpdated value="2024-12-10T21:51:57.719+00:00" />
+  </meta>
+  <active value="true" />
+</Practitioner>

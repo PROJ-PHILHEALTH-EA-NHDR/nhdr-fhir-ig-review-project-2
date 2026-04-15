@@ -1,0 +1,49 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-07-14T12:50:39.107+00:00" />
+  </meta>
+  <type value="batch" />
+  <entry>
+    <fullUrl value="urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0a" />
+    <resource>
+      <Patient>
+        <active value="true" />
+        <name>
+          <use value="official" />
+          <family value="Chalmers" />
+          <given value="Peter" />
+          <given value="Jamesssssss" />
+        </name>
+        <birthDate value="1974-12-25" />
+      </Patient>
+    </resource>
+    <request>
+      <method value="POST" />
+      <url value="Patient" />
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:88f151c0-a954-468a-88bd-5ae15c08e059" />
+    <resource>
+      <Patient>
+        <identifier>
+          <system value="http:/example.org/fhir/ids" />
+          <value value="234234" />
+        </identifier>
+        <active value="true" />
+        <name>
+          <use value="official" />
+          <family value="Chalmers" />
+          <given value="Peterssss" />
+          <given value="James" />
+        </name>
+        <birthDate value="1974-12-25" />
+      </Patient>
+    </resource>
+    <request>
+      <method value="POST" />
+      <url value="Patient" />
+      <ifNoneExist value="identifier=http:/example.org/fhir/ids|234234" />
+    </request>
+  </entry>
+</Bundle>

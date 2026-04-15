@@ -1,0 +1,59 @@
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-07-18T08:23:58.665+00:00" />
+  </meta>
+  <extension url="https://example.org/fhir/StructureDefinition/Organization">
+    <valueReference>
+      <reference value="Organization/example" />
+    </valueReference>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical" />
+      <code value="active" />
+      <display value="Active" />
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" />
+      <code value="confirmed" />
+      <display value="Confirmed" />
+    </coding>
+  </verificationStatus>
+  <type value="allergy" />
+  <category value="medication" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="7980" />
+      <display value="Penicillin" />
+    </coding>
+    <text value="Penicillin" />
+  </code>
+  <patient>
+    <reference value="Patient/example" />
+  </patient>
+  <onsetDateTime value="2024-07-01T10:00:00+08:00" />
+  <reaction>
+    <substance>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="7980" />
+        <display value="Penicillin" />
+      </coding>
+      <text value="Penicillin" />
+    </substance>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="271807003" />
+        <display value="Rash" />
+      </coding>
+      <text value="Rash" />
+    </manifestation>
+    <description value="Patient developed a rash after taking penicillin." />
+    <onset value="2024-07-01T11:00:00+08:00" />
+    <severity value="moderate" />
+  </reaction>
+</AllergyIntolerance>

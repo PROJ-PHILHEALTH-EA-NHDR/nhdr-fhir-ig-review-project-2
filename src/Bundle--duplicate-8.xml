@@ -1,0 +1,25 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-07-14T12:24:55.443+00:00" />
+  </meta>
+  <type value="transaction" />
+  <entry>
+    <resource>
+      <Patient>
+        <id value="deb73381811" />
+        <active value="true" />
+        <name>
+          <use value="official" />
+          <family value="Wade" />
+          <given value="Dwyane" />
+          <given value="James" />
+        </name>
+        <birthDate value="1974-12-25" />
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT" />
+      <url value="Patient" />
+    </request>
+  </entry>
+</Bundle>

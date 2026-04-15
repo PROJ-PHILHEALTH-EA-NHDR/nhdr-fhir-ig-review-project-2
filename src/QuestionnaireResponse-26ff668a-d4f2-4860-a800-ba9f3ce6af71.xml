@@ -1,0 +1,22 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="26ff668a-d4f2-4860-a800-ba9f3ce6af71" />
+  <meta>
+    <lastUpdated value="2024-12-10T08:52:07.638+00:00" />
+  </meta>
+  <questionnaire value="http://example.org/fhir/Questionnaire/MemberCheck" />
+  <status value="completed" />
+  <subject>
+    <reference value="Patient/85607a95-696d-4a8e-9532-411720fd6897" />
+  </subject>
+  <authored value="2024-12-10T12:00:00Z" />
+  <author>
+    <reference value="Organization/948280a8-bf86-49b3-8cfb-5c3ddeff1555" />
+  </author>
+  <item>
+    <linkId value="1" />
+    <text value="Patient is the member?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+</QuestionnaireResponse>

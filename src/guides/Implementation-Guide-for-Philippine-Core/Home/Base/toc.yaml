@@ -1,0 +1,16 @@
+- name: Patient
+  filename: Patient.page.md
+- name: Practitioner
+  filename: Practitioner.page.md
+- name: PractitionerRole
+  filename: PractitionerRole.page.md
+- name: Organization
+  filename: Organization.page.md
+- name: Encounter
+  filename: Encounter.page.md
+- name: Location
+  filename: Location.page.md
+- name: Appointment
+  filename: Appointment.page.md
+- name: Person
+  filename: Person.page.md

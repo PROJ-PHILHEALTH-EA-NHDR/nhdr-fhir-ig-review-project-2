@@ -1,0 +1,19 @@
+== Suppressed Messages ==
+
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem
+# (And include comments like this justifying why)
+# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+#   The following errors are mismatches in the examples/instances. Ignored for now until all profiles are finalized, then instances are to be updated.
+_DT_Fixed_Wrong
+TERMINOLOGY_TX_SYSTEM_NO_CODE
+
+#   Deprecated element.
+MSG_DEPENDS_ON_DEPRECATED
+
+#   CodeSystems are referenced to an external, non-terminology service set of codes.
+CODESYSTEM_PROPERTY_URI_UNKNOWN
+RESOURCE_CANONICAL_MISMATCH
+
+#   Codes are added to the ValueSet, not from any existing CodeSystem.
+VALUESET_INCLUDE_INVALID_CONCEPT_CODE

@@ -1,0 +1,11 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_Period",
+  "name": "PH_Period",
+  "status": "draft",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Period",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Period",
+  "derivation": "constraint"
+}

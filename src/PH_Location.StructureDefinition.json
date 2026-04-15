@@ -1,0 +1,95 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_Location",
+  "name": "PH_Location",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.meta",
+        "path": "Location.meta",
+        "max": "0"
+      },
+      {
+        "id": "Location.extension",
+        "path": "Location.extension",
+        "max": "0"
+      },
+      {
+        "id": "Location.modifierExtension",
+        "path": "Location.modifierExtension",
+        "max": "0"
+      },
+      {
+        "id": "Location.identifier",
+        "path": "Location.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Location.status",
+        "path": "Location.status",
+        "max": "0"
+      },
+      {
+        "id": "Location.operationalStatus",
+        "path": "Location.operationalStatus",
+        "max": "0"
+      },
+      {
+        "id": "Location.alias",
+        "path": "Location.alias",
+        "max": "0"
+      },
+      {
+        "id": "Location.description",
+        "path": "Location.description",
+        "max": "0"
+      },
+      {
+        "id": "Location.mode",
+        "path": "Location.mode",
+        "max": "0"
+      },
+      {
+        "id": "Location.telecom",
+        "path": "Location.telecom",
+        "max": "0"
+      },
+      {
+        "id": "Location.physicalType",
+        "path": "Location.physicalType",
+        "max": "0"
+      },
+      {
+        "id": "Location.position",
+        "path": "Location.position",
+        "max": "0"
+      },
+      {
+        "id": "Location.managingOrganization",
+        "path": "Location.managingOrganization",
+        "max": "0"
+      },
+      {
+        "id": "Location.partOf",
+        "path": "Location.partOf",
+        "max": "0"
+      },
+      {
+        "id": "Location.hoursOfOperation",
+        "path": "Location.hoursOfOperation",
+        "max": "0"
+      },
+      {
+        "id": "Location.availabilityExceptions",
+        "path": "Location.availabilityExceptions",
+        "max": "0"
+      }
+    ]
+  }
+}

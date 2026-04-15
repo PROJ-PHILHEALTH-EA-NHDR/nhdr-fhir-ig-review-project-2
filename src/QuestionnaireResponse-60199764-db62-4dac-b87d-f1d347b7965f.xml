@@ -1,0 +1,15 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="60199764-db62-4dac-b87d-f1d347b7965f" />
+  <meta>
+    <lastUpdated value="2024-12-10T21:32:57.497+00:00" />
+  </meta>
+  <questionnaire value="https://example.org/Questionnaire/Example1" />
+  <status value="completed" />
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+  <authored value="2024-12-11T12:00:00Z" />
+  <author>
+    <reference value="Practitioner/4140bf45-3fc0-49b7-87da-34ab57f4bbd7" />
+  </author>
+</QuestionnaireResponse>

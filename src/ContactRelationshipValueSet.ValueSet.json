@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ContactRelationshipValueSet",
+  "url": "https://example.org/fhir/ValueSet/ContactRelationshipValueSet",
+  "name": "ContactRelationshipValueSet",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/contact-relationship-codes",
+        "concept": [
+          {
+            "code": "S",
+            "display": "Spouse"
+          },
+          {
+            "code": "C",
+            "display": "Child"
+          },
+          {
+            "code": "P",
+            "display": "Parent"
+          }
+        ]
+      }
+    ]
+  }
+}

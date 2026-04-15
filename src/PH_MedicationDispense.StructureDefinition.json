@@ -1,0 +1,127 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_MedicationDispense",
+  "name": "PH_MedicationDispense",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationDispense",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationDispense",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationDispense.extension:cost",
+        "path": "MedicationDispense.extension",
+        "sliceName": "cost",
+        "short": "Cost of the medication",
+        "definition": "Cost of the medication",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Cost"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "MedicationDispense.identifier",
+        "path": "MedicationDispense.identifier",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.partOf",
+        "path": "MedicationDispense.partOf",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.statusReason[x]",
+        "path": "MedicationDispense.statusReason[x]",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.category",
+        "path": "MedicationDispense.category",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.subject",
+        "path": "MedicationDispense.subject",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.context",
+        "path": "MedicationDispense.context",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.supportingInformation",
+        "path": "MedicationDispense.supportingInformation",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.performer",
+        "path": "MedicationDispense.performer",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.location",
+        "path": "MedicationDispense.location",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.authorizingPrescription",
+        "path": "MedicationDispense.authorizingPrescription",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.type",
+        "path": "MedicationDispense.type",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.daysSupply",
+        "path": "MedicationDispense.daysSupply",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.whenPrepared",
+        "path": "MedicationDispense.whenPrepared",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.destination",
+        "path": "MedicationDispense.destination",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.receiver",
+        "path": "MedicationDispense.receiver",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.note",
+        "path": "MedicationDispense.note",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.substitution",
+        "path": "MedicationDispense.substitution",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.detectedIssue",
+        "path": "MedicationDispense.detectedIssue",
+        "max": "0"
+      },
+      {
+        "id": "MedicationDispense.eventHistory",
+        "path": "MedicationDispense.eventHistory",
+        "max": "0"
+      }
+    ]
+  }
+}

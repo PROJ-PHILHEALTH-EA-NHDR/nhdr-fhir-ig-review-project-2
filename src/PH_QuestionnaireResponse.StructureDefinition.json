@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_QuestionnaireResponse",
+  "name": "PH_QuestionnaireResponse",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "QuestionnaireResponse",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "QuestionnaireResponse.identifier",
+        "path": "QuestionnaireResponse.identifier",
+        "max": "0"
+      },
+      {
+        "id": "QuestionnaireResponse.basedOn",
+        "path": "QuestionnaireResponse.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "QuestionnaireResponse.partOf",
+        "path": "QuestionnaireResponse.partOf",
+        "max": "0"
+      },
+      {
+        "id": "QuestionnaireResponse.questionnaire",
+        "path": "QuestionnaireResponse.questionnaire",
+        "max": "0"
+      },
+      {
+        "id": "QuestionnaireResponse.subject",
+        "path": "QuestionnaireResponse.subject",
+        "max": "0"
+      },
+      {
+        "id": "QuestionnaireResponse.encounter",
+        "path": "QuestionnaireResponse.encounter",
+        "max": "0"
+      },
+      {
+        "id": "QuestionnaireResponse.authored",
+        "path": "QuestionnaireResponse.authored",
+        "max": "0"
+      },
+      {
+        "id": "QuestionnaireResponse.author",
+        "path": "QuestionnaireResponse.author",
+        "max": "0"
+      },
+      {
+        "id": "QuestionnaireResponse.source",
+        "path": "QuestionnaireResponse.source",
+        "max": "0"
+      }
+    ]
+  }
+}

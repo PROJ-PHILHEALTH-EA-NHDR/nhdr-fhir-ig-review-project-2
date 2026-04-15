@@ -1,0 +1,52 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_AllergyIntolerance",
+  "name": "PH_AllergyIntolerance",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "AllergyIntolerance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "AllergyIntolerance.extension:organization",
+        "path": "AllergyIntolerance.extension",
+        "sliceName": "organization",
+        "short": "Health facility where allergy intolerance was encountered",
+        "definition": "Health facility where allergy intolerance was encountered",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "AllergyIntolerance.criticality",
+        "path": "AllergyIntolerance.criticality",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.recorder",
+        "path": "AllergyIntolerance.recorder",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.asserter",
+        "path": "AllergyIntolerance.asserter",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.lastOccurrence",
+        "path": "AllergyIntolerance.lastOccurrence",
+        "max": "0"
+      }
+    ]
+  }
+}

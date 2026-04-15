@@ -1,0 +1,121 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_Medication",
+  "name": "PH_Medication",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Medication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication.extension",
+        "path": "Medication.extension",
+        "min": 1
+      },
+      {
+        "id": "Medication.extension:dosageInstruction",
+        "path": "Medication.extension",
+        "sliceName": "dosageInstruction",
+        "short": "instruction on the medication dosage",
+        "definition": "instruction on the medication dosage",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/DosageInstruction"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Medication.extension:packaging",
+        "path": "Medication.extension",
+        "sliceName": "packaging",
+        "short": "Detailed description on the medication packaging",
+        "definition": "Detailed description on the medication packaging",
+        "comment": "This is an extension",
+        "min": 1,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Packaging"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Medication.extension:packaging.value[x]",
+        "path": "Medication.extension.value[x]"
+      },
+      {
+        "id": "Medication.extension:packaging.value[x].extension:packcode",
+        "path": "Medication.extension.value[x].extension",
+        "sliceName": "packcode",
+        "short": "Package Code",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/originalText"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Medication.extension:packaging.value[x].extension:packdesc",
+        "path": "Medication.extension.value[x].extension",
+        "sliceName": "packdesc",
+        "short": "Package Description",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/originalText"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Medication.extension:dateUpdated",
+        "path": "Medication.extension",
+        "sliceName": "dateUpdated",
+        "short": "Date of last update",
+        "definition": "Date of last update",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/DateUpdated"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Medication.status",
+        "path": "Medication.status",
+        "max": "0"
+      },
+      {
+        "id": "Medication.manufacturer",
+        "path": "Medication.manufacturer",
+        "max": "0"
+      },
+      {
+        "id": "Medication.amount",
+        "path": "Medication.amount",
+        "max": "0"
+      }
+    ]
+  }
+}

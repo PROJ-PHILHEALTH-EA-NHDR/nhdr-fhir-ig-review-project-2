@@ -1,0 +1,142 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_Specimen",
+  "name": "PH_Specimen",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Specimen",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen.extension:recordedDate",
+        "path": "Specimen.extension",
+        "sliceName": "recordedDate",
+        "short": "The recordedDate represents when this particular Specimen record was uploaded into the NHDR.",
+        "definition": "The recordedDate represents when this particular Specimen record was uploaded into the NHDR.",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/RecordedDate"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Specimen.extension:resultDate",
+        "path": "Specimen.extension",
+        "sliceName": "resultDate",
+        "short": "The resultDate represents the date on which the outcome of the particular specimen was recorded.",
+        "definition": "The resultDate represents the date on which the outcome of the particular specimen was recorded..",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/ResultDate"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Specimen.extension:extOrganization",
+        "path": "Specimen.extension",
+        "sliceName": "extOrganization",
+        "short": "Health facility where the specimen was collected",
+        "definition": "Health facility where the specimen was collected",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Ext_Organization"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Specimen.extension:species",
+        "path": "Specimen.extension",
+        "sliceName": "species",
+        "short": "Describes the type of species / organism [e.g. Malaria (Plasmodium falciparum, Plasmodium malariae, Plasmodium vivax, Plasmodium ovale, Plasmodium knowlesi)]",
+        "definition": "Describes the type of species / organism [e.g. Malaria (Plasmodium falciparum, Plasmodium malariae, Plasmodium vivax, Plasmodium ovale, Plasmodium knowlesi)]",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Species"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Specimen.type",
+        "path": "Specimen.type",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://example.org/fhir/ValueSet/SpecimenType"
+        }
+      },
+      {
+        "id": "Specimen.collection.extension:releaseDate",
+        "path": "Specimen.collection.extension",
+        "sliceName": "releaseDate",
+        "short": "Date the specimen was released",
+        "definition": "Date the specimen was released",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/ReleaseDate"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Specimen.collection.method",
+        "path": "Specimen.collection.method",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://example.org/fhir/ValueSet/SpecimenCollectionMethod"
+        }
+      },
+      {
+        "id": "Specimen.collection.bodySite",
+        "path": "Specimen.collection.bodySite",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.fastingStatus[x]",
+        "path": "Specimen.collection.fastingStatus[x]",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.processing.procedure",
+        "path": "Specimen.processing.procedure",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://example.org/fhir/ValueSet/SpecimenProcessingProcedure"
+        }
+      },
+      {
+        "id": "Specimen.condition",
+        "path": "Specimen.condition",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://example.org/fhir/ValueSet/SpecimenCondition"
+        }
+      }
+    ]
+  }
+}

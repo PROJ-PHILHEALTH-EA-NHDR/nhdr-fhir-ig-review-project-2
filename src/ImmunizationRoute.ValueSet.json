@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ImmunizationRoute",
+  "url": "http://example.org/fhir/ValueSet/ImmunizationRoute",
+  "version": "1.0.0",
+  "name": "ImmunizationRoute",
+  "title": "Immunization Route Value Set",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-11-28",
+  "publisher": "Your Organization Name",
+  "description": "A value set representing routes of immunization administration.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/ImmunizationRouteCodeSystem",
+        "concept": [
+          {
+            "code": "IM",
+            "display": "Intramuscular (IM)"
+          },
+          {
+            "code": "Intradermal",
+            "display": "Intradermal"
+          }
+        ]
+      }
+    ]
+  }
+}

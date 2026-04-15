@@ -1,0 +1,19 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Diptheria-b8b94d0f-3461-4cb3-a7d9-365482f2e24a" />
+  <meta>
+    <lastUpdated value="2024-12-12T04:23:03.986+00:00" />
+  </meta>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="1234-5" />
+      <display value="Observation of Diphtheria Symptoms" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+  <effectiveDateTime value="2024-12-11T15:00:00Z" />
+  <valueString value="Patient exhibits sore throat, swollen neck, and hoarseness of voice." />
+</Observation>

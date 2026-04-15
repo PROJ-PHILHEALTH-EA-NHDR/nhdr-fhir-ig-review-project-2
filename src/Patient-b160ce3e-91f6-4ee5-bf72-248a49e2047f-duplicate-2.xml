@@ -1,0 +1,11 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  <meta>
+    <lastUpdated value="2024-12-12T04:30:08.681+00:00" />
+  </meta>
+  <active value="true" />
+  <name>
+    <family value="Doe" />
+    <given value="John" />
+  </name>
+</Patient>

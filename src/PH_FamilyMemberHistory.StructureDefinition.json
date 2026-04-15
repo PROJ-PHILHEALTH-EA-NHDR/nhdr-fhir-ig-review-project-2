@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_FamilyMemberHistory",
+  "name": "PH_FamilyMemberHistory",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "FamilyMemberHistory",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "FamilyMemberHistory.instantiatesCanonical",
+        "path": "FamilyMemberHistory.instantiatesCanonical",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.instantiatesUri",
+        "path": "FamilyMemberHistory.instantiatesUri",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.dataAbsentReason",
+        "path": "FamilyMemberHistory.dataAbsentReason",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.sex",
+        "path": "FamilyMemberHistory.sex",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.born[x]",
+        "path": "FamilyMemberHistory.born[x]",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.age[x]",
+        "path": "FamilyMemberHistory.age[x]",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.estimatedAge",
+        "path": "FamilyMemberHistory.estimatedAge",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.deceased[x]",
+        "path": "FamilyMemberHistory.deceased[x]",
+        "max": "0"
+      },
+      {
+        "id": "FamilyMemberHistory.note",
+        "path": "FamilyMemberHistory.note",
+        "max": "0"
+      }
+    ]
+  }
+}

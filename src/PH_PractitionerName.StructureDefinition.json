@@ -1,0 +1,90 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_PractitionerRole",
+  "name": "PH_PractitionerRole",
+  "status": "draft",
+  "description": "A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.identifier",
+        "path": "PractitionerRole.identifier",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.active",
+        "path": "PractitionerRole.active",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.period",
+        "path": "PractitionerRole.period",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.code.coding",
+        "path": "PractitionerRole.code.coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://example.org/fhir/ValueSet/PractitionerRoleValueSet"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty",
+        "path": "PractitionerRole.specialty",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.location",
+        "path": "PractitionerRole.location",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.healthcareService",
+        "path": "PractitionerRole.healthcareService",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.telecom",
+        "path": "PractitionerRole.telecom",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.availableTime",
+        "path": "PractitionerRole.availableTime",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.notAvailable",
+        "path": "PractitionerRole.notAvailable",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.availabilityExceptions",
+        "path": "PractitionerRole.availabilityExceptions",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.endpoint",
+        "path": "PractitionerRole.endpoint",
+        "max": "0"
+      }
+    ]
+  }
+}

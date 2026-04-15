@@ -1,0 +1,536 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_Patient",
+  "name": "PH_Patient",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient",
+        "path": "Patient",
+        "short": "Information about an individua ql receiving health care services",
+        "definition": "Demographics and other administrative information about an individual receiving care or other health-related services. The data in the resource covers the \"who\" information about the patient. Its attributes are focused on the demgraphic information necessary to support the administrative, financial and logistical procedures."
+      },
+      {
+        "id": "Patient.extension:nationality",
+        "path": "Patient.extension",
+        "sliceName": "nationality",
+        "definition": "Code representing nationality of patient.",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-nationality"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "binding": {
+          "strength": "required",
+          "description": "Nationality ValueSet",
+          "valueSet": "https://example.org/fhir/StructureDefinition/NationalityValueSet"
+        }
+      },
+      {
+        "id": "Patient.extension:nationality.extension:code",
+        "path": "Patient.extension.extension",
+        "sliceName": "code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://example.org/fhir/StructureDefinition/NationalityValueSet"
+        }
+      },
+      {
+        "id": "Patient.extension:religion",
+        "path": "Patient.extension",
+        "sliceName": "religion",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-religion"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:indigeneousGroup",
+        "path": "Patient.extension",
+        "sliceName": "indigeneousGroup",
+        "short": "Indigeneous Group",
+        "definition": "The indigenerous/ethnic group where the person belongs",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/IndigeneousGroup"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "binding": {
+          "strength": "required",
+          "description": "IndigenousGroup",
+          "valueSet": "https://example.org/fhir/ValueSet/IndigenousGroupValueSet"
+        }
+      },
+      {
+        "id": "Patient.extension:indigeneousGroup.value[x]",
+        "path": "Patient.extension.value[x]",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://example.org/fhir/StructureDefinition/IndigenousPeopleValueSet"
+        }
+      },
+      {
+        "id": "Patient.extension:indigenousPeople",
+        "path": "Patient.extension",
+        "sliceName": "indigenousPeople",
+        "short": "Indigenous People",
+        "definition": "Identify whether a person belongs to an indigenous/ethnic group",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/IndigenousPeople"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:spouseName",
+        "path": "Patient.extension",
+        "sliceName": "spouseName",
+        "short": "Name of Spouse",
+        "definition": "Name of the spouse",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/SpouseName"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:fatherName",
+        "path": "Patient.extension",
+        "sliceName": "fatherName",
+        "short": "Name of the Father",
+        "definition": "Name of the Father",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/FatherName"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:motherName",
+        "path": "Patient.extension",
+        "sliceName": "motherName",
+        "short": "Name of the Mother",
+        "definition": "Name of the Mother",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/MotherName"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:recordedDate",
+        "path": "Patient.extension",
+        "sliceName": "recordedDate",
+        "short": "Date information was recorded",
+        "definition": "The recordedDate represents when this particular Patient record was created in the system, which is often a system-generated date.",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/RecordedDate"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:signature",
+        "path": "Patient.extension",
+        "sliceName": "signature",
+        "short": "Signature",
+        "definition": "This pertains to the signature",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Signature"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:signature.value[x]",
+        "path": "Patient.extension.value[x]"
+      },
+      {
+        "id": "Patient.extension:signature.value[x].extension:position",
+        "path": "Patient.extension.value[x].extension",
+        "sliceName": "position",
+        "short": "Position of the signee",
+        "definition": "This pertains to the signature of the signee",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/originalText"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:signature.value[x].extension:reason",
+        "path": "Patient.extension.value[x].extension",
+        "sliceName": "reason",
+        "short": "Reason of the signature",
+        "definition": "This pertains to the reason of the signature",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/originalText"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:occupation",
+        "path": "Patient.extension",
+        "sliceName": "occupation",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Occupation"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:sex",
+        "path": "Patient.extension",
+        "sliceName": "sex",
+        "short": "Patient's sex",
+        "definition": "The sex assigned at birth, as documented on the birth registration",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Sex"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "binding": {
+          "strength": "extensible",
+          "description": "Sex",
+          "valueSet": "https://example.org/fhir/ValueSet/SexValueSet"
+        }
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "id"
+            }
+          ],
+          "description": "PhilhealthID",
+          "rules": "open"
+        },
+        "definition": "An identifier for this patient.\nA numeric or alphanumeric string that is associated with a single object or entity within a given system.",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:philhealthID",
+        "path": "Patient.identifier",
+        "sliceName": "philhealthID",
+        "short": "Philhealth Number",
+        "definition": "PIN - PhilHealth Identification Number",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:philhealthID.system",
+        "path": "Patient.identifier.system",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:philhealthID.period",
+        "path": "Patient.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:otherID",
+        "path": "Patient.identifier",
+        "sliceName": "otherID",
+        "short": "Other Identification aside from the Philhealth ID",
+        "definition": "TIN, SSS, GSIS, Divers License, Passport no., National ID",
+        "comment": "TIN, SSS, GSIS, Divers License, Passport no., National ID",
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:otherID.system",
+        "path": "Patient.identifier.system",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:otherID.period",
+        "path": "Patient.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name.id",
+        "path": "Patient.name.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name.extension:middleName",
+        "path": "Patient.name.extension",
+        "sliceName": "middleName",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/MiddleName"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.name.use",
+        "path": "Patient.name.use",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name.prefix",
+        "path": "Patient.name.prefix",
+        "max": "0"
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "max": "0"
+      },
+      {
+        "id": "Patient.deceased[x]",
+        "path": "Patient.deceased[x]",
+        "definition": "Indicates if the individual is deceased or not.\nThe \"\"[x]\"\" is replaced with the title-cased name of the type that is actually used."
+      },
+      {
+        "id": "Patient.address.extension",
+        "path": "Patient.address.extension",
+        "definition": "This pertains to the barangay address"
+      },
+      {
+        "id": "Patient.address.extension:barangay",
+        "path": "Patient.address.extension",
+        "sliceName": "barangay",
+        "short": "barangay",
+        "definition": "The barangay is the smallest political unit",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/originalText"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.address.extension:region",
+        "path": "Patient.address.extension",
+        "sliceName": "region",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Region"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.address.extension:province",
+        "path": "Patient.address.extension",
+        "sliceName": "province",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/originalText"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.address.extension:city",
+        "path": "Patient.address.extension",
+        "sliceName": "city",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/originalText"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.address.extension:zip",
+        "path": "Patient.address.extension",
+        "sliceName": "zip",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/originalText"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.address.extension:pSGC",
+        "path": "Patient.address.extension",
+        "sliceName": "pSGC",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/PSGC"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.address.state",
+        "path": "Patient.address.state",
+        "definition": "Pertains to the provincial subdivision"
+      },
+      {
+        "id": "Patient.maritalStatus",
+        "path": "Patient.maritalStatus",
+        "definition": "This field contains a patient's most recent marital (civil) status.\nRefers to the personal status of each individual with reference to the marriage laws or customs of the country.  It is the same as \"\"civil status\"\", the term usually used in official and private records, documents, transactions, and others, in the country. \n\nAlternate Name: Civil Status",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://example.org/fhir/ValueSet/MaritalStatusValueSet"
+        }
+      },
+      {
+        "id": "Patient.multipleBirth[x]",
+        "path": "Patient.multipleBirth[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "max": "0"
+      },
+      {
+        "id": "Patient.photo.id",
+        "path": "Patient.photo.id",
+        "max": "0"
+      },
+      {
+        "id": "Patient.photo.contentType",
+        "path": "Patient.photo.contentType",
+        "max": "0"
+      },
+      {
+        "id": "Patient.photo.language",
+        "path": "Patient.photo.language",
+        "max": "0"
+      },
+      {
+        "id": "Patient.photo.size",
+        "path": "Patient.photo.size",
+        "max": "0"
+      },
+      {
+        "id": "Patient.photo.hash",
+        "path": "Patient.photo.hash",
+        "max": "0"
+      },
+      {
+        "id": "Patient.photo.creation",
+        "path": "Patient.photo.creation",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.relationship",
+        "path": "Patient.contact.relationship",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://example.org/fhir/ValueSet/ContactRelationshipValueSet"
+        }
+      },
+      {
+        "id": "Patient.communication",
+        "path": "Patient.communication",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "definition": "Patient's nominated care provider. Pertains to the Konsulta Health Care Provider"
+      },
+      {
+        "id": "Patient.managingOrganization",
+        "path": "Patient.managingOrganization",
+        "max": "0"
+      }
+    ]
+  }
+}

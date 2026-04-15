@@ -1,0 +1,20 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://dummy_nhdr.org/fhir/StructureDefinition/MyEncounter2",
+  "name": "MyEncounter",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.status",
+        "path": "Encounter.status",
+        "comment": "This is a status"
+      }
+    ]
+  }
+}

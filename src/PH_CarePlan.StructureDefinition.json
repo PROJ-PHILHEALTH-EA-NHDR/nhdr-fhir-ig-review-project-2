@@ -1,0 +1,110 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_CarePlan",
+  "name": "PH_CarePlan",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CarePlan",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CarePlan",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CarePlan.identifier",
+        "path": "CarePlan.identifier",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.instantiatesCanonical",
+        "path": "CarePlan.instantiatesCanonical",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.instantiatesUri",
+        "path": "CarePlan.instantiatesUri",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.basedOn",
+        "path": "CarePlan.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.replaces",
+        "path": "CarePlan.replaces",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.partOf",
+        "path": "CarePlan.partOf",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.category",
+        "path": "CarePlan.category",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.title",
+        "path": "CarePlan.title",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.description",
+        "path": "CarePlan.description",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.encounter",
+        "path": "CarePlan.encounter",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.period",
+        "path": "CarePlan.period",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.created",
+        "path": "CarePlan.created",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.author",
+        "path": "CarePlan.author",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.contributor",
+        "path": "CarePlan.contributor",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.careTeam",
+        "path": "CarePlan.careTeam",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.addresses",
+        "path": "CarePlan.addresses",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.supportingInfo",
+        "path": "CarePlan.supportingInfo",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.goal",
+        "path": "CarePlan.goal",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity",
+        "path": "CarePlan.activity",
+        "max": "0"
+      }
+    ]
+  }
+}

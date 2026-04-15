@@ -1,0 +1,17 @@
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="AFP-8beef4ea-127b-482b-8927-9c6328673c7f" />
+  <meta>
+    <lastUpdated value="2024-12-12T03:38:57.499+00:00" />
+  </meta>
+  <status value="in-progress" />
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+      <code value="FLACCIDPARALYSIS" />
+      <display value="Flaccid Paralysis Encounter" />
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+</Encounter>

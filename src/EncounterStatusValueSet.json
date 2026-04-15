@@ -1,0 +1,53 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/EncounterStatusValueSet",
+  "name": "EncounterStatusValueSet",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ValueSet",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ValueSet",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ValueSet.compose.include.concept",
+        "path": "ValueSet.compose.include.concept",
+        "slicing": {
+          "description": "Status of the encounter",
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Yes",
+        "path": "ValueSet.compose.include.concept",
+        "sliceName": "Yes"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Yes.code",
+        "path": "ValueSet.compose.include.concept.code",
+        "fixedCode": "Yes"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Yes.display",
+        "path": "ValueSet.compose.include.concept.display",
+        "fixedString": "Yes"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:No",
+        "path": "ValueSet.compose.include.concept",
+        "sliceName": "No"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:No.code",
+        "path": "ValueSet.compose.include.concept.code",
+        "fixedCode": "No"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:No.display",
+        "path": "ValueSet.compose.include.concept.display",
+        "fixedString": "No"
+      }
+    ]
+  }
+}

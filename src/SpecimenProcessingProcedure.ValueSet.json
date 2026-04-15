@@ -1,0 +1,106 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SpecimenProcessingProcedure",
+  "url": "http://example.org/fhir/ValueSet/SpecimenProcessingProcedure",
+  "version": "1.0.0",
+  "name": "SpecimenProcessingProcedure",
+  "title": "Specimen Processing Procedure Value Set",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-11-28",
+  "publisher": "Your Organization Name",
+  "description": "A value set representing various specimen processing procedures.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/SpecimenProcessingProcedureCodeSystem",
+        "concept": [
+          {
+            "code": "ELISA",
+            "display": "Enzyme-linked Immunoassay (ELISA)"
+          },
+          {
+            "code": "IgGAntibodyTest",
+            "display": "IgG Antibody Test"
+          },
+          {
+            "code": "IgMandIgGAntibodyTest",
+            "display": "IgM and IgG Antibody Test"
+          },
+          {
+            "code": "VirusAntigenDetection",
+            "display": "Virus Antigen Detection (NS1)"
+          },
+          {
+            "code": "CompleteBloodCount",
+            "display": "Complete Blood Count"
+          },
+          {
+            "code": "IGG-IgMAntibodyTest",
+            "display": "IGG-IgM Antibody Test"
+          },
+          {
+            "code": "IGM-IgGAntibodyTest",
+            "display": "IGM-IgG Antibody Test"
+          },
+          {
+            "code": "PCR",
+            "display": "Polymerase Chain Reaction"
+          },
+          {
+            "code": "VirusIsolation",
+            "display": "Virus Isolation"
+          },
+          {
+            "code": "CultureAndSensitivity",
+            "display": "Culture and Sensitivity"
+          },
+          {
+            "code": "WidalsTest",
+            "display": "Widals Test"
+          },
+          {
+            "code": "TyphidotTest",
+            "display": "Typhidot Test"
+          },
+          {
+            "code": "TubexTest",
+            "display": "Tubex Test"
+          },
+          {
+            "code": "DirectFluorescentAntibodyTest",
+            "display": "Direct Fluorescent Antibody Test (FAT)"
+          },
+          {
+            "code": "RapidAntigenTest",
+            "display": "Rapid Antigen Test"
+          },
+          {
+            "code": "MicroscopicAgglutinationTest",
+            "display": "Microscopic Agglutination Test"
+          },
+          {
+            "code": "RapidDiagnosticTest",
+            "display": "Rapid Diagnostic Test"
+          },
+          {
+            "code": "Culture",
+            "display": "Culture"
+          },
+          {
+            "code": "LatexAgglutination",
+            "display": "Latex agglutination"
+          },
+          {
+            "code": "GramStain",
+            "display": "Gram stain"
+          },
+          {
+            "code": "CultureAndPCR",
+            "display": "Culture and PCR"
+          }
+        ]
+      }
+    ]
+  }
+}

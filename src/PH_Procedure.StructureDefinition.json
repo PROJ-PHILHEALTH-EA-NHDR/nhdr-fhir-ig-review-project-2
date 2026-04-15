@@ -1,0 +1,181 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_Procedure",
+  "name": "PH_Procedure",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.extension:organization",
+        "path": "Procedure.extension",
+        "sliceName": "organization",
+        "short": "The facility where the procedure was done",
+        "definition": "The facility where the procedure was done",
+        "comment": "This is an entension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Procedure.extension:recordedDate",
+        "path": "Procedure.extension",
+        "sliceName": "recordedDate",
+        "short": "This is the date the procedure was recorded in NHDR",
+        "definition": "This is the date the procedure was recorded in NHDR",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/RecordedDate"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Procedure.extension:illnessClass",
+        "path": "Procedure.extension",
+        "sliceName": "illnessClass",
+        "short": "Illness code of the disease as listed in Philhealth",
+        "definition": "Illness code of the disease as listed in Philhealth",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/IllnessClass"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Procedure.instantiatesCanonical",
+        "path": "Procedure.instantiatesCanonical",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.instantiatesUri",
+        "path": "Procedure.instantiatesUri",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.basedOn",
+        "path": "Procedure.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.partOf",
+        "path": "Procedure.partOf",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.status",
+        "path": "Procedure.status",
+        "fixedCode": "http://example.org/fhir/ValueSet/ProcedureStatusValueSet",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/ValueSet/ProcedureStatusValueSet"
+        }
+      },
+      {
+        "id": "Procedure.statusReason",
+        "path": "Procedure.statusReason",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://example.org/fhir/ValueSet/ProcedureCodeValueSet"
+        }
+      },
+      {
+        "id": "Procedure.recorder",
+        "path": "Procedure.recorder",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.asserter",
+        "path": "Procedure.asserter",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.performer",
+        "path": "Procedure.performer",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.location",
+        "path": "Procedure.location",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.reasonCode",
+        "path": "Procedure.reasonCode",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.reasonReference",
+        "path": "Procedure.reasonReference",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.bodySite",
+        "path": "Procedure.bodySite",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://example.org/fhir/ValueSet/ProcedureBodySiteValueSet"
+        }
+      },
+      {
+        "id": "Procedure.report",
+        "path": "Procedure.report",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.complication",
+        "path": "Procedure.complication",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.complicationDetail",
+        "path": "Procedure.complicationDetail",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.followUp",
+        "path": "Procedure.followUp",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.focalDevice",
+        "path": "Procedure.focalDevice",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.usedReference",
+        "path": "Procedure.usedReference",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.usedCode",
+        "path": "Procedure.usedCode",
+        "max": "0"
+      }
+    ]
+  }
+}

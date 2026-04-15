@@ -1,0 +1,35 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="de86f0cb-58c9-41d9-a89d-86a3f8e03926" />
+  <meta>
+    <lastUpdated value="2024-12-11T05:00:31.793+00:00" />
+  </meta>
+  <status value="completed" />
+  <item>
+    <linkId value="1" />
+    <text value="Consulted?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+  <item>
+    <linkId value="2" />
+    <text value="Admitted?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+  <item>
+    <linkId value="3" />
+    <text value="History of animal bite exposure (Y/N)?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+  <item>
+    <linkId value="4" />
+    <text value="Specimen sent for rabies testing (Y/N)?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+</QuestionnaireResponse>

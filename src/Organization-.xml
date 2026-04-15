@@ -1,0 +1,17 @@
+<Organization xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-07-18T06:40:29.709+00:00" />
+  </meta>
+  <telecom>
+    <system value="phone" />
+    <value value="(+1) 734-677-7777" />
+  </telecom>
+  <telecom>
+    <system value="fax" />
+    <value value="(+1) 734-677-6622" />
+  </telecom>
+  <telecom>
+    <system value="email" />
+    <value value="organization@org.com" />
+  </telecom>
+</Organization>

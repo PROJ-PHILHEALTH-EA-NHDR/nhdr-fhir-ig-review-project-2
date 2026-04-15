@@ -1,0 +1,16 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="b8b94d0f-3461-4cb3-a7d9-365482f2e24a" />
+  <meta>
+    <lastUpdated value="2024-12-11T05:00:32.041+00:00" />
+  </meta>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="29965-3" />
+      <display value="Rabies virus antibody test" />
+    </coding>
+    <text value="Rabies Virus Antibody Test Result" />
+  </code>
+  <valueString value="Positive for rabies virus antibodies" />
+</Observation>

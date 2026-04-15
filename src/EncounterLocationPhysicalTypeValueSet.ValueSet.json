@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "id": "EncounterLocationPhysicalTypeValueSet",
+  "url": "https://example.org/fhir/ValueSet/EncounterLocationPhysicalTypeValueSet",
+  "name": "EncounterLocationPhysicalTypeValueSet",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/encounter-location-physical-type",
+        "concept": [
+          {
+            "code": "Private",
+            "display": "Private"
+          },
+          {
+            "code": "NonPrivate",
+            "display": "Non-Private (Charity/Service)"
+          }
+        ]
+      }
+    ]
+  }
+}

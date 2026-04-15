@@ -1,0 +1,11 @@
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-07-18T06:26:14.058+00:00" />
+  </meta>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0286" />
+      <code value="Physician" />
+    </coding>
+  </code>
+</PractitionerRole>

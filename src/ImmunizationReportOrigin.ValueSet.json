@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ImmunizationReportOrigin",
+  "url": "http://example.org/fhir/ValueSet/ImmunizationReportOrigin",
+  "version": "1.0.0",
+  "name": "ImmunizationReportOrigin",
+  "title": "Immunization Report Origin Value Set",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-11-28",
+  "publisher": "Your Organization Name",
+  "description": "A value set representing the origin of immunization reports.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/ImmunizationReportOriginCodeSystem",
+        "concept": [
+          {
+            "code": "VaccinationCard",
+            "display": "Vaccination Card"
+          },
+          {
+            "code": "Logsheet",
+            "display": "Logsheet"
+          },
+          {
+            "code": "ByRecall",
+            "display": "By recall"
+          },
+          {
+            "code": "OthersSpecify",
+            "display": "Others, Specify"
+          },
+          {
+            "code": "Card",
+            "display": "Card"
+          },
+          {
+            "code": "Recall",
+            "display": "Recall"
+          },
+          {
+            "code": "TCL",
+            "display": "TCL"
+          },
+          {
+            "code": "Both",
+            "display": "Both"
+          },
+          {
+            "code": "Unknown",
+            "display": "Unknown"
+          }
+        ]
+      }
+    ]
+  }
+}

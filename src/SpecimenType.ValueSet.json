@@ -1,0 +1,90 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SpecimenType",
+  "url": "http://example.org/fhir/ValueSet/SpecimenType",
+  "version": "1.0.0",
+  "name": "SpecimenType",
+  "title": "Specimen Type Value Set",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-11-28",
+  "publisher": "Your Organization Name",
+  "description": "A value set representing various types of specimen sources.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/SpecimenTypeCodeSystem",
+        "concept": [
+          {
+            "code": "Blood",
+            "display": "Blood"
+          },
+          {
+            "code": "Serum",
+            "display": "Serum"
+          },
+          {
+            "code": "DriedBloodSpot",
+            "display": "Dried Blood Spot"
+          },
+          {
+            "code": "CerebrospinalFluid",
+            "display": "Cerebrospinal fluid"
+          },
+          {
+            "code": "Stool",
+            "display": "Stool"
+          },
+          {
+            "code": "Saliva",
+            "display": "Saliva"
+          },
+          {
+            "code": "Urine",
+            "display": "Urine"
+          },
+          {
+            "code": "BrainTissue",
+            "display": "Brain Tissue"
+          },
+          {
+            "code": "Skin",
+            "display": "Skin"
+          },
+          {
+            "code": "Cornea",
+            "display": "Cornea"
+          },
+          {
+            "code": "NasopharyngealOropharyngealSwab",
+            "display": "Nasopharyngeal/Oropharyngeal Swab (NPS/OBS)"
+          },
+          {
+            "code": "ThroatSwab",
+            "display": "Throat swab"
+          },
+          {
+            "code": "NasalSwab",
+            "display": "Nasal swab"
+          },
+          {
+            "code": "Toxigenic",
+            "display": "Toxigenic"
+          },
+          {
+            "code": "NonToxigenic",
+            "display": "Non-toxigenic"
+          },
+          {
+            "code": "VesicleSwab",
+            "display": "Vesicle swab"
+          },
+          {
+            "code": "RectalSwab",
+            "display": "Rectal swab"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="135e85e4-0364-4083-8873-4a99a94b076f" />
+  <meta>
+    <lastUpdated value="2024-12-10T14:28:43.820+00:00" />
+  </meta>
+  <clinicalStatus>
+    <coding>
+      <system value="http://example.org/fhir/ValueSet/ClinicalStatusValueSet" />
+      <code value="active" />
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://example.org/fhir/ValueSet/ConditionVerificationStatusValueSet" />
+      <code value="confirmed" />
+    </coding>
+  </verificationStatus>
+  <code>
+    <coding>
+      <system value="http://example.org/fhir/ValueSet/ConditionCodeValueSet" />
+      <code value="D123" />
+      <display value="Diabetes Mellitus" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+  <onsetDateTime value="2024-12-01T12:00:00+08:00" />
+</Condition>

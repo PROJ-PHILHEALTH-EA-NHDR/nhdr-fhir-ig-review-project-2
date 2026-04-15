@@ -1,0 +1,21 @@
+<Location xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-07-18T06:57:37.403+00:00" />
+  </meta>
+  <name value="General Hospital Room 101" />
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/location-physical-type" />
+      <code value="ro" />
+      <display value="Room" />
+    </coding>
+  </type>
+  <address>
+    <use value="work" />
+    <line value="1234 Health St." />
+    <city value="Health City" />
+    <state value="Health State" />
+    <postalCode value="12345" />
+    <country value="PH" />
+  </address>
+</Location>

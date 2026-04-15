@@ -1,0 +1,296 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_Encounter",
+  "name": "PH_Encounter",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.extension:ageYears",
+        "path": "Encounter.extension",
+        "sliceName": "ageYears",
+        "short": "Age in years",
+        "definition": "Age in years",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/AgeYears"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Encounter.extension:ageMonths",
+        "path": "Encounter.extension",
+        "sliceName": "ageMonths",
+        "short": "Age in months",
+        "definition": "Age in months",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/AgeMonths"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Encounter.extension:ageDays",
+        "path": "Encounter.extension",
+        "sliceName": "ageDays",
+        "short": "Age in days",
+        "definition": "Age in days",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/AgeDays"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Encounter.extension:patientClassification",
+        "path": "Encounter.extension",
+        "sliceName": "patientClassification",
+        "short": "Patient Classification",
+        "definition": "Patient Classification",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/PatientClassification"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Encounter.extension:interviewer",
+        "path": "Encounter.extension",
+        "sliceName": "interviewer",
+        "short": "Name of interviewer",
+        "definition": "Name of Interviewer at first point of contact",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Interviewer"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Encounter.extension:investigatorName",
+        "path": "Encounter.extension",
+        "sliceName": "investigatorName",
+        "short": "Name of Investigator / Assessor",
+        "definition": "Name of Investigator / Assessor",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/InvestigatorName"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Encounter.extension:dateInterview",
+        "path": "Encounter.extension",
+        "sliceName": "dateInterview",
+        "short": "Date of interview",
+        "definition": "Date of interview",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/DateInterview"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Encounter.extension:dateInvestigation",
+        "path": "Encounter.extension",
+        "sliceName": "dateInvestigation",
+        "short": "Date of investigation",
+        "definition": "Date of investigation",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/DateInvestigation"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Encounter.extension:reporterName",
+        "path": "Encounter.extension",
+        "sliceName": "reporterName",
+        "short": "Name of reporter",
+        "definition": "Name of reporter",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/ReporterName"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Encounter.extension:illnessClass",
+        "path": "Encounter.extension",
+        "sliceName": "illnessClass",
+        "definition": "Class of illness",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Illness_Class"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "binding": {
+          "strength": "extensible",
+          "description": "valueset for case rates",
+          "valueSet": "https://example.org/fhir/StructureDefinition/EncounterIllnessClassValueSet"
+        }
+      },
+      {
+        "id": "Encounter.modifierExtension",
+        "path": "Encounter.modifierExtension",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.identifier",
+        "path": "Encounter.identifier",
+        "slicing": {
+          "description": "These are the different encounter IDs",
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Encounter.identifier:philHealthID",
+        "path": "Encounter.identifier",
+        "sliceName": "philHealthID",
+        "short": "Philhealth code",
+        "definition": "A unique number or code assigned by the Philippine Health Insurance Corporation.",
+        "max": "1"
+      },
+      {
+        "id": "Encounter.identifier:covidDataID",
+        "path": "Encounter.identifier",
+        "sliceName": "covidDataID",
+        "short": "COVID Data ID",
+        "definition": "COVID Data Identification",
+        "max": "1"
+      },
+      {
+        "id": "Encounter.identifier:covidPatientID",
+        "path": "Encounter.identifier",
+        "sliceName": "covidPatientID",
+        "short": "COVID Patient ID",
+        "definition": "COVID Patient Identification",
+        "max": "1"
+      },
+      {
+        "id": "Encounter.statusHistory",
+        "path": "Encounter.statusHistory",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.classHistory",
+        "path": "Encounter.classHistory",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.type",
+        "path": "Encounter.type",
+        "max": "1",
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://example.org/fhir/ValueSet/EncounterTypeValueSet"
+        }
+      },
+      {
+        "id": "Encounter.serviceType",
+        "path": "Encounter.serviceType",
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://example.org/fhir/ValueSet/EncounterServiceTypeValueSet"
+        }
+      },
+      {
+        "id": "Encounter.priority",
+        "path": "Encounter.priority",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.episodeOfCare",
+        "path": "Encounter.episodeOfCare",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.basedOn",
+        "path": "Encounter.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.participant",
+        "path": "Encounter.participant",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.hospitalization.dischargeDisposition",
+        "path": "Encounter.hospitalization.dischargeDisposition",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://example.org/fhir/ValueSet/EncounterHospitalizationDischargeDispositionValueSet"
+        }
+      },
+      {
+        "id": "Encounter.location.physicalType",
+        "path": "Encounter.location.physicalType",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://example.org/fhir/ValueSet/EncounterLocationPhysicalTypeValueSet"
+        }
+      },
+      {
+        "id": "Encounter.serviceProvider",
+        "path": "Encounter.serviceProvider",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.partOf",
+        "path": "Encounter.partOf",
+        "max": "0"
+      }
+    ]
+  }
+}

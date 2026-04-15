@@ -1,0 +1,11 @@
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="3512b500-6b4e-47dd-9c28-0bdf01077a8a" />
+  <meta>
+    <lastUpdated value="2024-12-10T14:28:43.909+00:00" />
+  </meta>
+  <status value="active" />
+  <intent value="plan" />
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+</CarePlan>

@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ConditionSeverityValueSet",
+  "url": "http://example.org/fhir/ValueSet/ConditionSeverityValueSet",
+  "version": "1.0.0",
+  "name": "ConditionSeverityValueSet",
+  "title": "Condition Severity Value Set",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-11-28",
+  "publisher": "Your Organization Name",
+  "description": "A value set representing the severity levels of conditions, particularly focused on dengue.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/ConditionSeverityCodeSystem",
+        "concept": [
+          {
+            "code": "NoWarningSigns",
+            "display": "No warning signs"
+          },
+          {
+            "code": "WithWarningSigns",
+            "display": "With warning signs"
+          },
+          {
+            "code": "SevereDengue",
+            "display": "Severe Dengue"
+          }
+        ]
+      }
+    ]
+  }
+}

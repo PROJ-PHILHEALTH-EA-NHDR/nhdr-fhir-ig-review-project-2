@@ -1,0 +1,83 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="example-ph-patient" />
+  <meta>
+    <lastUpdated value="2024-12-09T12:31:34.236+00:00" />
+    <profile value="https://example.org/fhir/StructureDefinition/PH_Patient" />
+  </meta>
+  <extension url="https://example.org/fhir/StructureDefinition/nationality">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://example.org/nationality-codes" />
+        <code value="PH" />
+        <display value="Filipino" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://example.org/fhir/StructureDefinition/indigenousGroup">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://example.org/indigenous-group-codes" />
+        <code value="Aetas" />
+        <display value="Aetas" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://example.org/fhir/StructureDefinition/spouseName">
+    <valueString value="Maria Clara" />
+  </extension>
+  <extension url="https://example.org/fhir/StructureDefinition/occupation">
+    <valueString value="Farmer" />
+  </extension>
+  <extension url="https://example.org/fhir/StructureDefinition/sex">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://example.org/sex-codes" />
+        <code value="M" />
+        <display value="Male" />
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://example.org/philhealth" />
+    <value value="1234567890" />
+  </identifier>
+  <identifier>
+    <type>
+      <text value="Other ID (e.g., National ID)" />
+    </type>
+    <value value="9876543210" />
+  </identifier>
+  <name>
+    <use value="official" />
+    <family value="Dela Cruz" />
+    <given value="Juan" />
+  </name>
+  <name>
+    <use value="nickname" />
+    <given value="Johnny" />
+  </name>
+  <gender value="male" />
+  <birthDate value="1985-06-15" />
+  <address>
+    <extension url="http://hl7.org/fhir/StructureDefinition/originalText">
+      <valueString value="Barangay" />
+    </extension>
+    <use value="home" />
+    <line value="123 Barangay Street" />
+    <city value="Quezon City" />
+    <state value="Metro Manila" />
+    <postalCode value="1100" />
+    <country value="Philippines" />
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://example.org/marital-status" />
+      <code value="M" />
+      <display value="Married" />
+    </coding>
+  </maritalStatus>
+  <generalPractitioner>
+    <reference value="Practitioner/1234" />
+    <display value="Dr. Jose Rizal" />
+  </generalPractitioner>
+</Patient>

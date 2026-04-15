@@ -1,0 +1,25 @@
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="940c280f-6250-44c9-8a40-ee4bd519ca8d" />
+  <meta>
+    <lastUpdated value="2024-12-11T05:00:31.924+00:00" />
+  </meta>
+  <status value="completed" />
+  <vaccineCode>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/cvx" />
+      <code value="40" />
+      <display value="Rabies vaccine, for intramuscular injection" />
+    </coding>
+    <text value="Rabies Vaccine" />
+  </vaccineCode>
+  <patient>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </patient>
+  <occurrenceDateTime value="2024-12-10" />
+  <location>
+    <reference value="Organization/2be57ebb-3fb8-4c29-a82c-79eda0167960" />
+  </location>
+  <note>
+    <text value="Rabies vaccine administered as post-exposure prophylaxis." />
+  </note>
+</Immunization>

@@ -1,0 +1,16 @@
+- name: Stakeholders Collaboration
+  filename: Stakeholders-Collaboration.page.md
+- name: Sample API Calls
+  filename: Sample-API-Calls.page.md
+- name: Base
+  filename: Base
+- name: Clinical
+  filename: Clinical
+- name: Index
+  filename: Index.page.md
+- name: Extensions
+  filename: Extensions.page.md
+- name: Search Parameters
+  filename: Search-Parameters.page.md
+- name: patient
+  filename: patient.page.md

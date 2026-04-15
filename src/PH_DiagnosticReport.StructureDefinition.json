@@ -1,0 +1,70 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_DiagnosticReport",
+  "name": "PH_DiagnosticReport",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.extension:extOrganization",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "extOrganization",
+        "short": "Health facility where the diagnosis was made",
+        "definition": "Health facility where the diagnosis was made",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Ext_Organization"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "DiagnosticReport.basedOn",
+        "path": "DiagnosticReport.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.code",
+        "path": "DiagnosticReport.code",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://example.org/fhir/ValueSet/DiagnosticReportCode"
+        }
+      },
+      {
+        "id": "DiagnosticReport.performer",
+        "path": "DiagnosticReport.performer",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.resultsInterpreter",
+        "path": "DiagnosticReport.resultsInterpreter",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.imagingStudy",
+        "path": "DiagnosticReport.imagingStudy",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.media",
+        "path": "DiagnosticReport.media",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.presentedForm",
+        "path": "DiagnosticReport.presentedForm",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "id": "PractitionerRoleValueSet",
+  "url": "https://example.org/fhir/ValueSet/PractitionerRoleValueSet",
+  "name": "PractitionerRoleValueSet",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/practitioner-role-codes",
+        "concept": [
+          {
+            "code": "Physician",
+            "display": "Physician"
+          },
+          {
+            "code": "Nurse",
+            "display": "Nurse"
+          },
+          {
+            "code": "Midwife",
+            "display": "Midwife"
+          },
+          {
+            "code": "Hilot",
+            "display": "Hilot"
+          },
+          {
+            "code": "Unknown",
+            "display": "Unknown"
+          },
+          {
+            "code": "Other-Specify",
+            "display": "Other-Specify"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+<Condition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-07-18T07:25:23.888+00:00" />
+  </meta>
+  <extension url="https://example.org/fhir/StructureDefinition/Ext_Organization">
+    <valueReference>
+      <reference value="Organization/example" />
+    </valueReference>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+      <code value="active" />
+      <display value="Active" />
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+      <code value="confirmed" />
+      <display value="Confirmed" />
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category" />
+      <code value="problem-list-item" />
+      <display value="Problem List Item" />
+    </coding>
+  </category>
+  <severity>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="24484000" />
+      <display value="Severe" />
+    </coding>
+  </severity>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="44054006" />
+      <display value="Diabetes mellitus type 2 (disorder)" />
+    </coding>
+    <text value="Diabetes mellitus type 2" />
+  </code>
+  <subject>
+    <reference value="Patient/example" />
+  </subject>
+  <onsetDateTime value="2024-07-18T08:00:00+08:00" />
+  <recordedDate value="2024-07-18T08:00:00+08:00" />
+</Condition>

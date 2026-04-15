@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ClinicalStatusValueSet",
+  "url": "http://example.org/fhir/ValueSet/ClinicalStatusValueSet",
+  "version": "1.0.0",
+  "name": "ClinicalStatusValueSet",
+  "title": "Clinical Status Value Set",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-11-28",
+  "publisher": "Your Organization Name",
+  "description": "A value set representing clinical status options for patients in various contexts.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/ValueSet/ClinicalStatusValueSet",
+        "concept": [
+          {
+            "code": "Improved",
+            "display": "Improved"
+          },
+          {
+            "code": "Recovered",
+            "display": "Recovered"
+          },
+          {
+            "code": "HAMA_DAMA",
+            "display": "HAMA/DAMA"
+          },
+          {
+            "code": "Expired",
+            "display": "Expired/Died/Death"
+          },
+          {
+            "code": "Absconded",
+            "display": "Absconded"
+          },
+          {
+            "code": "TransferredReferred",
+            "display": "Transferred/Referred To"
+          },
+          {
+            "code": "Alive",
+            "display": "Alive"
+          },
+          {
+            "code": "ClinicallyWell",
+            "display": "Clinically well"
+          },
+          {
+            "code": "Active",
+            "display": "Active (currently admitted/isolation/quarantine)"
+          },
+          {
+            "code": "ILI",
+            "display": "Influenza-like Illness (ILI)"
+          },
+          {
+            "code": "SARI",
+            "display": "SARI"
+          },
+          {
+            "code": "Others",
+            "display": "Others"
+          }
+        ]
+      }
+    ]
+  }
+}

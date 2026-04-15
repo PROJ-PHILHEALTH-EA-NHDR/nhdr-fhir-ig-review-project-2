@@ -1,0 +1,94 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_MedicationStatement",
+  "name": "PH_MedicationStatement",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationStatement",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationStatement.extension:extOrganization",
+        "path": "MedicationStatement.extension",
+        "sliceName": "extOrganization",
+        "short": "The health facility code where the medication was administered.",
+        "definition": "The health facility code where the medication was administered.",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Ext_Organization"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "MedicationStatement.extension:extEncounter",
+        "path": "MedicationStatement.extension",
+        "sliceName": "extEncounter",
+        "short": "The encounter when the medicine was consumed or administered.",
+        "definition": "The encounter when the medicine was consumed or administered.",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/ExtEncounter"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "MedicationStatement.basedOn",
+        "path": "MedicationStatement.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "MedicationStatement.partOf",
+        "path": "MedicationStatement.partOf",
+        "max": "0"
+      },
+      {
+        "id": "MedicationStatement.category",
+        "path": "MedicationStatement.category",
+        "max": "0"
+      },
+      {
+        "id": "MedicationStatement.context",
+        "path": "MedicationStatement.context",
+        "max": "0"
+      },
+      {
+        "id": "MedicationStatement.effective[x]",
+        "path": "MedicationStatement.effective[x]",
+        "max": "0"
+      },
+      {
+        "id": "MedicationStatement.dateAsserted",
+        "path": "MedicationStatement.dateAsserted",
+        "max": "0"
+      },
+      {
+        "id": "MedicationStatement.informationSource",
+        "path": "MedicationStatement.informationSource",
+        "max": "0"
+      },
+      {
+        "id": "MedicationStatement.derivedFrom",
+        "path": "MedicationStatement.derivedFrom",
+        "max": "0"
+      },
+      {
+        "id": "MedicationStatement.reasonReference",
+        "path": "MedicationStatement.reasonReference",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/Ext_Organization",
+  "name": "Ext_Organization",
+  "status": "draft",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Condition"
+    },
+    {
+      "type": "element",
+      "expression": "Procedure"
+    },
+    {
+      "type": "element",
+      "expression": "Observation"
+    },
+    {
+      "type": "element",
+      "expression": "Specimen"
+    },
+    {
+      "type": "element",
+      "expression": "DiagnosticReport"
+    },
+    {
+      "type": "element",
+      "expression": "MedicationAdministration"
+    },
+    {
+      "type": "element",
+      "expression": "MedicationStatement"
+    },
+    {
+      "type": "element",
+      "expression": "Immunization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://example.org/fhir/StructureDefinition/Ext_Organization"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "Organization"
+            ],
+            "aggregation": [
+              "referenced"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

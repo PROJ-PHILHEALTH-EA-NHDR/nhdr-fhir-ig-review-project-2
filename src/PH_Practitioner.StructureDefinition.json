@@ -1,0 +1,79 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_Practitioner",
+  "name": "PH_Practitioner",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner",
+        "path": "Practitioner",
+        "definition": "A person who is directly involved in the provisioning of healthcare."
+      },
+      {
+        "id": "Practitioner.extension:signature",
+        "path": "Practitioner.extension",
+        "sliceName": "signature",
+        "short": "Practitioner Signature",
+        "definition": "Practitioner Signature",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Signature"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Practitioner.extension:sex",
+        "path": "Practitioner.extension",
+        "sliceName": "sex",
+        "short": "The sex assigned at birth, as documented on the birth registration",
+        "definition": "The sex assigned at birth, as documented on the birth registration",
+        "comment": "This is an extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://example.org/fhir/StructureDefinition/Sex"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Practitioner.gender",
+        "path": "Practitioner.gender",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.birthDate",
+        "path": "Practitioner.birthDate",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.photo",
+        "path": "Practitioner.photo",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.communication",
+        "path": "Practitioner.communication",
+        "max": "0"
+      }
+    ]
+  }
+}

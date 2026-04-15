@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "MaritalStatusValueSet",
+  "url": "https://example.org/fhir/ValueSet/MaritalStatusValueSet",
+  "name": "MaritalStatusValueSet",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/marital-status-codes",
+        "concept": [
+          {
+            "code": "S",
+            "display": "Single"
+          },
+          {
+            "code": "M",
+            "display": "Married"
+          },
+          {
+            "code": "W",
+            "display": "Widowed"
+          },
+          {
+            "code": "Sep",
+            "display": "Separated"
+          }
+        ]
+      }
+    ]
+  }
+}

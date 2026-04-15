@@ -1,0 +1,36 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/MyPatient",
+  "name": "MyPatient",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "definition": "A name associated with the individual. This is the name of the patient"
+      },
+      {
+        "id": "Patient.name.extension:calculatedValue",
+        "path": "Patient.name.extension",
+        "sliceName": "calculatedValue",
+        "short": "A calculated value. This is a sample extension",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/cqf-calculatedValue"
+            ]
+          }
+        ],
+        "isModifier": false
+      }
+    ]
+  }
+}

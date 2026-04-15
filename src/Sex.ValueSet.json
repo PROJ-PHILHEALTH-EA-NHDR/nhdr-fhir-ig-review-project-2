@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "id": "SexValueSet",
+  "url": "https://example.org/fhir/ValueSet/SexValueSet",
+  "name": "SexValueSet",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/sex-codes",
+        "concept": [
+          {
+            "code": "male",
+            "display": "Male"
+          },
+          {
+            "code": "female",
+            "display": "Female"
+          },
+          {
+            "code": "unknown",
+            "display": "Unknown"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="Rubella-3c3a4ffc-a4d4-4502-b935-7fb1c3f371d9" />
+  <meta>
+    <lastUpdated value="2024-12-12T03:35:52.374+00:00" />
+  </meta>
+  <status value="completed" />
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+</QuestionnaireResponse>

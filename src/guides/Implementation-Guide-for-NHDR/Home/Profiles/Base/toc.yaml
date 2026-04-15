@@ -1,0 +1,8 @@
+- name: Patient
+  filename: Patient.page.md
+- name: Practitioner
+  filename: Practitioner.page.md
+- name: PractitionerRole
+  filename: PractitionerRole.page.md
+- name: Organization
+  filename: Organization.page.md

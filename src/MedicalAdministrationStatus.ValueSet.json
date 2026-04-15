@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "MedicalAdministrationStatus",
+  "url": "http://example.org/fhir/ValueSet/MedicalAdministrationStatus",
+  "version": "1.0.0",
+  "name": "MedicalAdministrationStatus",
+  "title": "Medical Administration Status Value Set",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-11-28",
+  "publisher": "Your Organization Name",
+  "description": "A value set representing the status of medical administration (e.g., Yes, No, Unknown).",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/MedicalAdministrationStatusCodeSystem",
+        "concept": [
+          {
+            "code": "Yes",
+            "display": "Yes"
+          },
+          {
+            "code": "No",
+            "display": "No"
+          },
+          {
+            "code": "Unknown",
+            "display": "Unknown"
+          }
+        ]
+      }
+    ]
+  }
+}

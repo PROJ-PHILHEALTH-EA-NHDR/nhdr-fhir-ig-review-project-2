@@ -1,0 +1,89 @@
+{
+  "resourceType": "ValueSet",
+  "id": "EncounterHospitalizationDischargeDispositionValueSet",
+  "url": "http://example.org/fhir/ValueSet/EncounterHospitalizationDischargeDispositionValueSet",
+  "version": "1.0.0",
+  "name": "EncounterHospitalizationDischargeDispositionValueSet",
+  "title": "Encounter Hospitalization Discharge Disposition Value Set",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-26",
+  "publisher": "Example Publisher",
+  "contact": [
+    {
+      "name": "Support Team",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "support@example.org"
+        }
+      ]
+    }
+  ],
+  "description": "This ValueSet contains a set of discharge disposition codes used to document the status or disposition of a patient after hospitalization.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "PH",
+          "display": "Philippines"
+        }
+      ]
+    }
+  ],
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/EncounterDischargeDisposition",
+        "concept": [
+          {
+            "code": "improved",
+            "display": "Improved"
+          },
+          {
+            "code": "recovered",
+            "display": "Recovered"
+          },
+          {
+            "code": "dama-hama",
+            "display": "Discharged against medical advice (DAMA) or Home against medical advice (HAMA)"
+          },
+          {
+            "code": "absconded",
+            "display": "Absconded"
+          },
+          {
+            "code": "expired",
+            "display": "Expired"
+          },
+          {
+            "code": "transferred-referred",
+            "display": "Transferred/Referred"
+          },
+          {
+            "code": "admitted-hospital",
+            "display": "Admitted in Hospital"
+          },
+          {
+            "code": "admitted-isolation-quarantine",
+            "display": "Admitted in isolation/quarantine facility"
+          },
+          {
+            "code": "home-isolation-quarantine",
+            "display": "In home isolation/quarantine"
+          },
+          {
+            "code": "discharged-home",
+            "display": "Discharged to home"
+          },
+          {
+            "code": "others",
+            "display": "Others"
+          }
+        ]
+      }
+    ]
+  }
+}

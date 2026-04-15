@@ -1,0 +1,76 @@
+{
+  "resourceType": "StructureDefinition",
+  "name": "SexValueSet",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ValueSet",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ValueSet",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ValueSet.compose.include.concept",
+        "path": "ValueSet.compose.include.concept",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "designation.use.code"
+            },
+            {
+              "type": "value",
+              "path": "designation.use.display"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Male",
+        "path": "ValueSet.compose.include.concept",
+        "sliceName": "Male"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Male.code",
+        "path": "ValueSet.compose.include.concept.code",
+        "fixedCode": "male"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Male.display",
+        "path": "ValueSet.compose.include.concept.display",
+        "fixedString": "Male"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Female",
+        "path": "ValueSet.compose.include.concept",
+        "sliceName": "Female"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Female.code",
+        "path": "ValueSet.compose.include.concept.code",
+        "fixedCode": "female"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Female.display",
+        "path": "ValueSet.compose.include.concept.display",
+        "fixedString": "Female"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Unknown",
+        "path": "ValueSet.compose.include.concept",
+        "sliceName": "Unknown"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Unknown.code",
+        "path": "ValueSet.compose.include.concept.code",
+        "fixedCode": "unknown"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Unknown.display",
+        "path": "ValueSet.compose.include.concept.display",
+        "fixedString": "Unknown"
+      }
+    ]
+  }
+}

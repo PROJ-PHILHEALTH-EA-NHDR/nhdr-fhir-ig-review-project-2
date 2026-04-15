@@ -1,0 +1,154 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ConditionCategoryValueSet",
+  "url": "http://example.org/fhir/ValueSet/ConditionCategoryValueSet",
+  "version": "1.0.0",
+  "name": "ConditionCategoryValueSet",
+  "title": "Condition Category Value Set",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-11-28",
+  "publisher": "Your Organization Name",
+  "description": "A value set representing various condition categories for classification.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/ConditionCategoryCodeSystem",
+        "concept": [
+          {
+            "code": "FlaccidFloppy",
+            "display": "Flaccid/Floppy"
+          },
+          {
+            "code": "Spastic",
+            "display": "Spastic"
+          },
+          {
+            "code": "Asthma",
+            "display": "Asthma"
+          },
+          {
+            "code": "ChronicCardiacDisease",
+            "display": "Chronic Cardiac Disease"
+          },
+          {
+            "code": "ChronicLiverDisease",
+            "display": "Chronic Liver Disease"
+          },
+          {
+            "code": "ChronicNeurologicalDisease",
+            "display": "Chronic Neurological or Neuro-muscular Disease"
+          },
+          {
+            "code": "ChronicRenalDisease",
+            "display": "Chronic Renal Disease"
+          },
+          {
+            "code": "Diabetes",
+            "display": "Diabetes"
+          },
+          {
+            "code": "HaematologicDisorders",
+            "display": "Haematologic Disorders"
+          },
+          {
+            "code": "ImmunodeficiencyDiseases",
+            "display": "Immunodeficiency Diseases"
+          },
+          {
+            "code": "Pregnancy",
+            "display": "Pregnancy"
+          },
+          {
+            "code": "Meningitis",
+            "display": "Meningitis"
+          },
+          {
+            "code": "Septicemia",
+            "display": "Septicemia"
+          },
+          {
+            "code": "A",
+            "display": "A"
+          },
+          {
+            "code": "B",
+            "display": "B"
+          },
+          {
+            "code": "C",
+            "display": "C"
+          },
+          {
+            "code": "D",
+            "display": "D"
+          },
+          {
+            "code": "D1",
+            "display": "D1"
+          },
+          {
+            "code": "D2",
+            "display": "D2"
+          },
+          {
+            "code": "D3",
+            "display": "D3"
+          },
+          {
+            "code": "D4",
+            "display": "D4"
+          },
+          {
+            "code": "E",
+            "display": "E"
+          },
+          {
+            "code": "E1",
+            "display": "E1"
+          },
+          {
+            "code": "E2",
+            "display": "E2"
+          },
+          {
+            "code": "F",
+            "display": "F"
+          },
+          {
+            "code": "G",
+            "display": "G"
+          },
+          {
+            "code": "H",
+            "display": "H"
+          },
+          {
+            "code": "H1",
+            "display": "H1"
+          },
+          {
+            "code": "H2",
+            "display": "H2"
+          },
+          {
+            "code": "I",
+            "display": "I"
+          },
+          {
+            "code": "J",
+            "display": "J"
+          },
+          {
+            "code": "J1",
+            "display": "J1"
+          },
+          {
+            "code": "J2",
+            "display": "J2"
+          }
+        ]
+      }
+    ]
+  }
+}

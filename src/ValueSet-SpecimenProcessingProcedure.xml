@@ -1,0 +1,103 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-12-09T23:19:51.076+00:00" />
+  </meta>
+  <url value="http://example.org/fhir/ValueSet/SpecimenProcessingProcedure" />
+  <version value="1.0.0" />
+  <name value="SpecimenProcessingProcedure" />
+  <title value="Specimen Processing Procedure Value Set" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2024-11-28" />
+  <publisher value="Your Organization Name" />
+  <description value="A value set representing various specimen processing procedures." />
+  <compose>
+    <include>
+      <system value="http://example.org/fhir/CodeSystem/SpecimenProcessingProcedureCodeSystem" />
+      <concept>
+        <code value="ELISA" />
+        <display value="Enzyme-linked Immunoassay (ELISA)" />
+      </concept>
+      <concept>
+        <code value="IgGAntibodyTest" />
+        <display value="IgG Antibody Test" />
+      </concept>
+      <concept>
+        <code value="IgMandIgGAntibodyTest" />
+        <display value="IgM and IgG Antibody Test" />
+      </concept>
+      <concept>
+        <code value="VirusAntigenDetection" />
+        <display value="Virus Antigen Detection (NS1)" />
+      </concept>
+      <concept>
+        <code value="CompleteBloodCount" />
+        <display value="Complete Blood Count" />
+      </concept>
+      <concept>
+        <code value="IGG-IgMAntibodyTest" />
+        <display value="IGG-IgM Antibody Test" />
+      </concept>
+      <concept>
+        <code value="IGM-IgGAntibodyTest" />
+        <display value="IGM-IgG Antibody Test" />
+      </concept>
+      <concept>
+        <code value="PCR" />
+        <display value="Polymerase Chain Reaction" />
+      </concept>
+      <concept>
+        <code value="VirusIsolation" />
+        <display value="Virus Isolation" />
+      </concept>
+      <concept>
+        <code value="CultureAndSensitivity" />
+        <display value="Culture and Sensitivity" />
+      </concept>
+      <concept>
+        <code value="WidalsTest" />
+        <display value="Widals Test" />
+      </concept>
+      <concept>
+        <code value="TyphidotTest" />
+        <display value="Typhidot Test" />
+      </concept>
+      <concept>
+        <code value="TubexTest" />
+        <display value="Tubex Test" />
+      </concept>
+      <concept>
+        <code value="DirectFluorescentAntibodyTest" />
+        <display value="Direct Fluorescent Antibody Test (FAT)" />
+      </concept>
+      <concept>
+        <code value="RapidAntigenTest" />
+        <display value="Rapid Antigen Test" />
+      </concept>
+      <concept>
+        <code value="MicroscopicAgglutinationTest" />
+        <display value="Microscopic Agglutination Test" />
+      </concept>
+      <concept>
+        <code value="RapidDiagnosticTest" />
+        <display value="Rapid Diagnostic Test" />
+      </concept>
+      <concept>
+        <code value="Culture" />
+        <display value="Culture" />
+      </concept>
+      <concept>
+        <code value="LatexAgglutination" />
+        <display value="Latex agglutination" />
+      </concept>
+      <concept>
+        <code value="GramStain" />
+        <display value="Gram stain" />
+      </concept>
+      <concept>
+        <code value="CultureAndPCR" />
+        <display value="Culture and PCR" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

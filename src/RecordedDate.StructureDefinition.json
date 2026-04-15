@@ -1,0 +1,43 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/RecordedDate",
+  "name": "RecordedDate",
+  "status": "draft",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Specimen"
+    },
+    {
+      "type": "element",
+      "expression": "Observation"
+    },
+    {
+      "type": "element",
+      "expression": "MedicationAdministration"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://example.org/fhir/StructureDefinition/RecordedDate"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      }
+    ]
+  }
+}

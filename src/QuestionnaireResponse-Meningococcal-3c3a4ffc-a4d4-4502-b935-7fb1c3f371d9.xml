@@ -1,0 +1,38 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="Meningococcal-3c3a4ffc-a4d4-4502-b935-7fb1c3f371d9" />
+  <meta>
+    <lastUpdated value="2024-12-12T04:28:20.669+00:00" />
+  </meta>
+  <status value="completed" />
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+  <item>
+    <linkId value="1" />
+    <text value="Has the specimen been sent to RITM?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+  <item>
+    <linkId value="2" />
+    <text value="Is the patient experiencing sudden fever, headache, or stiff neck?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+  <item>
+    <linkId value="3" />
+    <text value="Has the patient been in close contact with a confirmed meningococcal case?" />
+    <answer>
+      <valueBoolean value="false" />
+    </answer>
+  </item>
+  <item>
+    <linkId value="4" />
+    <text value="Are there signs of rash or purpura on the patient?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+</QuestionnaireResponse>

@@ -1,0 +1,31 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="Influenza-3c3a4ffc-a4d4-4502-b935-7fb1c3f371d9" />
+  <meta>
+    <lastUpdated value="2024-12-12T04:18:19.319+00:00" />
+  </meta>
+  <status value="completed" />
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+  <item>
+    <linkId value="1" />
+    <text value="Has the specimen been sent to RITM?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+  <item>
+    <linkId value="2" />
+    <text value="Does the patient have a history of recent travel to high-risk areas?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+  <item>
+    <linkId value="3" />
+    <text value="Has the patient experienced fever, cough, or difficulty in breathing?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+</QuestionnaireResponse>

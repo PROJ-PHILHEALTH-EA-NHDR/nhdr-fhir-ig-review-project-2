@@ -1,0 +1,6 @@
+Extension: Address
+Id: Address
+Context: Observation
+* ^url = "https://philhealth.gov.ph/fhir/StructureDefinition/Address"
+* ^status = #draft
+* value[x] only Address

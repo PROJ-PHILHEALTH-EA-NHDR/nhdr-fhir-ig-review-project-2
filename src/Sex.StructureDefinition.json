@@ -1,0 +1,68 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/Sex",
+  "name": "Sex",
+  "status": "draft",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://loinc.org",
+        "code": "76689-9"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "76689-9"
+          }
+        ],
+        "text": "Sex"
+      }
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Practitioner"
+    },
+    {
+      "type": "element",
+      "expression": "Patient"
+    },
+    {
+      "type": "element",
+      "expression": "Person"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://example.org/fhir/StructureDefinition/Sex"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "code",
+            "profile": [
+              "https://example.org/fhir/ValueSet/SexValueSet"
+            ]
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Sex ValueSet",
+          "valueSet": "https://example.org/fhir/StructureDefinition/SexValueSet"
+        }
+      }
+    ]
+  }
+}

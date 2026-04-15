@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "id": "EncounterServiceTypeValueSet",
+  "url": "https://example.org/fhir/ValueSet/EncounterServiceTypeValueSet",
+  "name": "EncounterServiceTypeValueSet",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/encounter-service-type-codes",
+        "concept": [
+          {
+            "code": "CBC",
+            "display": "Complete Blood Count (CBC) w/ platelet count"
+          },
+          {
+            "code": "LipidProfile",
+            "display": "Lipid Profile"
+          },
+          {
+            "code": "FBS",
+            "display": "Fasting Blood Sugar (FBS)"
+          },
+          {
+            "code": "OGTT",
+            "display": "Oral Glucose Tolerance Test"
+          },
+          {
+            "code": "HbA1c",
+            "display": "Glycosylated Hemoglobin (HbA1c)"
+          },
+          {
+            "code": "Creatinine",
+            "display": "Creatinine"
+          },
+          {
+            "code": "ChestXray",
+            "display": "Chest X-ray"
+          },
+          {
+            "code": "SputumMicroscopy",
+            "display": "Sputum Microscopy"
+          },
+          {
+            "code": "ECG",
+            "display": "Electrocardiogram (ECG)"
+          },
+          {
+            "code": "Urinalysis",
+            "display": "Urinalysis"
+          },
+          {
+            "code": "PapSmear",
+            "display": "Pap smear"
+          },
+          {
+            "code": "Fecalysis",
+            "display": "Fecalysis"
+          },
+          {
+            "code": "FOBT",
+            "display": "Focal Occult Blood Test"
+          }
+        ]
+      }
+    ]
+  }
+}

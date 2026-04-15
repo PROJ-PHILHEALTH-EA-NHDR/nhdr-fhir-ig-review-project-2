@@ -1,0 +1,13 @@
+{
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "name": "implementation.guide.nhdr",
+  "version": "1.0.0",
+  "description": "DRAFT: Philippine CDI Implementation Guide for Integration with the National Health Data Repository (NHDR)",
+  "author": "philipchristianzuniga",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1"
+  },
+  "jurisdiction": "urn:iso:std:iso:3166#PH"
+}

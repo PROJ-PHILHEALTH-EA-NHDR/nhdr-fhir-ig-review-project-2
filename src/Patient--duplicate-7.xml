@@ -1,0 +1,15 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-07-18T04:40:38.847+00:00" />
+  </meta>
+  <name>
+    <extension url="https://example.org/fhir/StructureDefinition/MiddleName">
+      <valueString value="Rizal" />
+    </extension>
+    <use value="official" />
+    <family value="Dela Cruz" />
+    <given value="Juan" />
+    <given value="Pedro" />
+    <given value="Santos" />
+  </name>
+</Patient>

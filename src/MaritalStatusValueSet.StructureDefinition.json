@@ -1,0 +1,87 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/MaritalStatusValueSet",
+  "name": "MaritalStatusValueSet",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ValueSet",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ValueSet",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ValueSet.compose.include.concept",
+        "path": "ValueSet.compose.include.concept",
+        "slicing": {
+          "description": "Marital Status Codes",
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Single",
+        "path": "ValueSet.compose.include.concept",
+        "sliceName": "Single"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Single.code",
+        "path": "ValueSet.compose.include.concept.code",
+        "fixedCode": "S"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Single.display",
+        "path": "ValueSet.compose.include.concept.display",
+        "definition": "A person who has never been married",
+        "fixedString": "Single"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Married",
+        "path": "ValueSet.compose.include.concept",
+        "sliceName": "Married"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Married.code",
+        "path": "ValueSet.compose.include.concept.code",
+        "fixedCode": "M"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Married.display",
+        "path": "ValueSet.compose.include.concept.display",
+        "definition": "A person who has never been married",
+        "fixedString": "Married"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Widowed",
+        "path": "ValueSet.compose.include.concept",
+        "sliceName": "Widowed"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Widowed.code",
+        "path": "ValueSet.compose.include.concept.code",
+        "fixedCode": "W"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Widowed.display",
+        "path": "ValueSet.compose.include.concept.display",
+        "definition": "A person who has never been married",
+        "fixedString": "Widowed"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Separated",
+        "path": "ValueSet.compose.include.concept",
+        "sliceName": "Separated"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Separated.code",
+        "path": "ValueSet.compose.include.concept.code",
+        "fixedCode": "S"
+      },
+      {
+        "id": "ValueSet.compose.include.concept:Separated.display",
+        "path": "ValueSet.compose.include.concept.display",
+        "definition": "A person who has never been married",
+        "fixedString": "Separated"
+      }
+    ]
+  }
+}

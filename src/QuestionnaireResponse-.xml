@@ -1,0 +1,19 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-12-10T08:38:43.941+00:00" />
+  </meta>
+  <questionnaire value="http://example.org/fhir/Questionnaire/MemberCheck" />
+  <status value="completed" />
+  <subject>
+    <reference value="Person/example-ph-person" />
+    <display value="Jane Doe" />
+  </subject>
+  <authored value="2024-12-10T12:00:00Z" />
+  <item>
+    <linkId value="1" />
+    <text value="Person is the member?" />
+    <answer>
+      <valueBoolean value="true" />
+    </answer>
+  </item>
+</QuestionnaireResponse>

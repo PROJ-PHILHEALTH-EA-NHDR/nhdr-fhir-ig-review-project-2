@@ -1,0 +1,77 @@
+<Organization xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2024-07-18T06:49:53.946+00:00" />
+    <profile value="https://example.org/fhir/StructureDefinition/PH_Organization" />
+  </meta>
+  <extension url="https://example.org/fhir/StructureDefinition/HeadName">
+    <valueHumanName>
+      <use value="official" />
+      <family value="Garcia" />
+      <given value="Juan" />
+      <prefix value="Dr." />
+    </valueHumanName>
+  </extension>
+  <extension url="https://example.org/fhir/StructureDefinition/HeadPosition">
+    <valueString value="Chief Medical Officer" />
+  </extension>
+  <identifier>
+    <use value="official" />
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="XX" />
+        <display value="Health Facility Code" />
+      </coding>
+    </type>
+    <system value="http://example.org/fhir/DOHfhudcode" />
+    <value value="HFC123456" />
+  </identifier>
+  <identifier>
+    <use value="secondary" />
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="PRN" />
+        <display value="Provider number" />
+      </coding>
+    </type>
+    <system value="http://example.org/fhir/otherID" />
+    <value value="PAN654321" />
+  </identifier>
+  <name value="Sample Health Facility" />
+  <telecom>
+    <system value="phone" />
+    <value value="+1234567890" />
+    <use value="work" />
+  </telecom>
+  <telecom>
+    <system value="email" />
+    <value value="info@example.org" />
+    <use value="work" />
+  </telecom>
+  <contact>
+    <purpose>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/contactentity-type" />
+        <code value="ADMIN" />
+        <display value="Administrative" />
+      </coding>
+    </purpose>
+    <name>
+      <use value="official" />
+      <family value="Santos" />
+      <given value="Maria" />
+      <prefix value="Ms." />
+    </name>
+    <telecom>
+      <system value="phone" />
+      <value value="+0987654321" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="email" />
+      <value value="admin@example.org" />
+      <use value="work" />
+    </telecom>
+  </contact>
+</Organization>

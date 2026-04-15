@@ -1,0 +1,10 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Rubella-b8b94d0f-3461-4cb3-a7d9-365482f2e24a" />
+  <meta>
+    <lastUpdated value="2024-12-12T03:35:52.428+00:00" />
+  </meta>
+  <status value="final" />
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+</Observation>

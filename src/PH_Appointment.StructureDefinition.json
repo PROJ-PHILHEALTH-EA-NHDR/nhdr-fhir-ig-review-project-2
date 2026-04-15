@@ -1,0 +1,123 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PH_Appointment",
+  "name": "PH_Appointment",
+  "status": "draft",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Appointment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Appointment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Appointment.identifier",
+        "path": "Appointment.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.status",
+        "path": "Appointment.status",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://example.org/fhir/ValueSet/AppointmentStatusValueSet"
+        }
+      },
+      {
+        "id": "Appointment.cancelationReason",
+        "path": "Appointment.cancelationReason",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.serviceCategory",
+        "path": "Appointment.serviceCategory",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.serviceType",
+        "path": "Appointment.serviceType",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.specialty",
+        "path": "Appointment.specialty",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.appointmentType",
+        "path": "Appointment.appointmentType",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.reasonCode",
+        "path": "Appointment.reasonCode",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.reasonReference",
+        "path": "Appointment.reasonReference",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.priority",
+        "path": "Appointment.priority",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.description",
+        "path": "Appointment.description",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.supportingInformation",
+        "path": "Appointment.supportingInformation",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.end",
+        "path": "Appointment.end",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.minutesDuration",
+        "path": "Appointment.minutesDuration",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.slot",
+        "path": "Appointment.slot",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.created",
+        "path": "Appointment.created",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.comment",
+        "path": "Appointment.comment",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.patientInstruction",
+        "path": "Appointment.patientInstruction",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.basedOn",
+        "path": "Appointment.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.participant",
+        "path": "Appointment.participant",
+        "max": "1"
+      },
+      {
+        "id": "Appointment.requestedPeriod",
+        "path": "Appointment.requestedPeriod",
+        "max": "1"
+      }
+    ]
+  }
+}

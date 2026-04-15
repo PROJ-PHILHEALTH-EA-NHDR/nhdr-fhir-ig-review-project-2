@@ -1,0 +1,66 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ImmunizationVaccineCode",
+  "url": "http://example.org/fhir/ValueSet/ImmunizationVaccineCode",
+  "version": "1.0.0",
+  "name": "ImmunizationVaccineCode",
+  "title": "Immunization Vaccine Code Value Set",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-11-28",
+  "publisher": "Your Organization Name",
+  "description": "A value set representing codes for different vaccines used in immunization.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/ImmunizationVaccineCodeSystem",
+        "concept": [
+          {
+            "code": "JE",
+            "display": "Japanese Encephalitis (JE)"
+          },
+          {
+            "code": "Penta-Hib",
+            "display": "Pentavalent-Haemophilus influenzae type B (Penta-Hib)"
+          },
+          {
+            "code": "Measles",
+            "display": "Measles"
+          },
+          {
+            "code": "MMR/MR",
+            "display": "Measles, Mumps, Rubella (MMR) or Measles, Rubella (MR)"
+          },
+          {
+            "code": "Meningococcal",
+            "display": "Meningococcal"
+          },
+          {
+            "code": "Pneumococcal",
+            "display": "Pneumococcal"
+          },
+          {
+            "code": "PCV10",
+            "display": "Pneumococcal Conjugate Vaccine (PCV10)"
+          },
+          {
+            "code": "PCV13",
+            "display": "Pneumococcal Conjugate Vaccine (PCV13)"
+          },
+          {
+            "code": "MV",
+            "display": "Measles Vaccine (MV)"
+          },
+          {
+            "code": "MR",
+            "display": "Measles and Rubella (MR)"
+          },
+          {
+            "code": "MMR",
+            "display": "Measles, Mumps, Rubella (MMR)"
+          }
+        ]
+      }
+    ]
+  }
+}

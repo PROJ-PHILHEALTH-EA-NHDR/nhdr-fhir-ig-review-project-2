@@ -1,0 +1,21 @@
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="7994709b-4350-4f91-b06f-4da782993a8b" />
+  <meta>
+    <lastUpdated value="2024-12-11T05:00:31.874+00:00" />
+  </meta>
+  <status value="available" />
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="122555007" />
+      <display value="Saliva specimen" />
+    </coding>
+    <text value="Saliva specimen" />
+  </type>
+  <subject>
+    <reference value="Patient/b160ce3e-91f6-4ee5-bf72-248a49e2047f" />
+  </subject>
+  <note>
+    <text value="Saliva specimen collected for rabies virus testing." />
+  </note>
+</Specimen>

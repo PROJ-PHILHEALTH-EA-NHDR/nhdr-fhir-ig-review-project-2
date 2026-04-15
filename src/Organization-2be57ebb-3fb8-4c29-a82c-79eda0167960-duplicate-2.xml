@@ -1,0 +1,14 @@
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="2be57ebb-3fb8-4c29-a82c-79eda0167960" />
+  <meta>
+    <lastUpdated value="2024-12-11T05:00:32.005+00:00" />
+  </meta>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
+      <code value="prov" />
+      <display value="Healthcare Provider" />
+    </coding>
+  </type>
+  <name value="Lucena General Hospital" />
+</Organization>

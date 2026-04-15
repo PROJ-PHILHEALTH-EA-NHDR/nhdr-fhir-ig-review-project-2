@@ -1,0 +1,282 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ObservationValue",
+  "url": "http://example.org/fhir/ValueSet/ObservationValue",
+  "version": "1.0.0",
+  "name": "ObservationValue",
+  "title": "Observation Value Set",
+  "status": "draft",
+  "experimental": false,
+  "date": "2024-11-28",
+  "publisher": "Your Organization Name",
+  "description": "A comprehensive value set for various observation values, including medical history, symptoms, clinical signs, and diagnostic outcomes.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/ObservationValueCodeSystem",
+        "concept": [
+          {
+            "code": "MultiplePregnancy",
+            "display": "Multiple pregnancy"
+          },
+          {
+            "code": "OvarianCyst",
+            "display": "Ovarian cyst"
+          },
+          {
+            "code": "MyomaUteri",
+            "display": "Myoma uteri"
+          },
+          {
+            "code": "PlacentaPrevia",
+            "display": "Placenta previa"
+          },
+          {
+            "code": "History3Miscarriages",
+            "display": "History 3 miscarriages"
+          },
+          {
+            "code": "HistoryStillbirth",
+            "display": "History of stillbirth"
+          },
+          {
+            "code": "HistoryPreEclampsia",
+            "display": "History of pre-eclampsia"
+          },
+          {
+            "code": "HistoryEclampsia",
+            "display": "History of eclampsia"
+          },
+          {
+            "code": "PrematureContraction",
+            "display": "Premature contraction"
+          },
+          {
+            "code": "Hypertension",
+            "display": "Hypertension"
+          },
+          {
+            "code": "HeartDisease",
+            "display": "Heart Disease"
+          },
+          {
+            "code": "Diabetes",
+            "display": "Diabetes"
+          },
+          {
+            "code": "ThyroidDisorder",
+            "display": "Thyroid Disorder"
+          },
+          {
+            "code": "Obesity",
+            "display": "Obesity"
+          },
+          {
+            "code": "ModerateSevereAsthma",
+            "display": "Moderate to severe asthma"
+          },
+          {
+            "code": "Epilepsy",
+            "display": "Epilepsy"
+          },
+          {
+            "code": "RenalDisease",
+            "display": "Renal disease"
+          },
+          {
+            "code": "BleedingDisorder",
+            "display": "Bleeding disorder"
+          },
+          {
+            "code": "HistoryCesarianSection",
+            "display": "History of previous cesarian section"
+          },
+          {
+            "code": "HistoryUterineMyomectomy",
+            "display": "History of uterine myomectomy"
+          },
+          {
+            "code": "AlteredMentalSensorium",
+            "display": "ALTERED MENTAL SENSORIUM"
+          },
+          {
+            "code": "AbdominalCrampPain",
+            "display": "ABDOMINAL CRAMP/PAIN"
+          },
+          {
+            "code": "Anorexia",
+            "display": "ANOREXIA"
+          },
+          {
+            "code": "BleedingGums",
+            "display": "BLEEDING GUMS"
+          },
+          {
+            "code": "BodyWeakness",
+            "display": "BODY WEAKNESS"
+          },
+          {
+            "code": "BlurringVision",
+            "display": "BLURRING OF VISION"
+          },
+          {
+            "code": "Constipation",
+            "display": "CONSTIPATION"
+          },
+          {
+            "code": "ChestPain",
+            "display": "CHEST PAIN/DISCOMFORT"
+          },
+          {
+            "code": "Cough",
+            "display": "COUGH"
+          },
+          {
+            "code": "Diarrhea",
+            "display": "DIARRHEA"
+          },
+          {
+            "code": "Dizziness",
+            "display": "DIZZINESS"
+          },
+          {
+            "code": "Dysphagia",
+            "display": "DYSPHAGIA"
+          },
+          {
+            "code": "Dyspnea",
+            "display": "DYSPNEA"
+          },
+          {
+            "code": "Dysuria",
+            "display": "DYSURIA"
+          },
+          {
+            "code": "Epistaxis",
+            "display": "EPISTAXIS"
+          },
+          {
+            "code": "FlankLowerBackPain",
+            "display": "FLANK OR LOWER BACK"
+          },
+          {
+            "code": "FrequencyOfUrination",
+            "display": "FREQUENCY OF URINATION"
+          },
+          {
+            "code": "Headache",
+            "display": "HEADACHE"
+          },
+          {
+            "code": "Hematemesis",
+            "display": "HEMATEMESIS"
+          },
+          {
+            "code": "Hematuria",
+            "display": "HEMATURIA"
+          },
+          {
+            "code": "Hemoptysis",
+            "display": "HEMOPTYSIS"
+          },
+          {
+            "code": "Irritability",
+            "display": "IRRITABILITY"
+          },
+          {
+            "code": "Jaundice",
+            "display": "JAUNDICE"
+          },
+          {
+            "code": "LegCrampsPain",
+            "display": "LEG CRAMPS OR PAIN"
+          },
+          {
+            "code": "LowerExtremityEdema",
+            "display": "LOWER EXTREMITY EDEMA"
+          },
+          {
+            "code": "Myalgia",
+            "display": "MYALGIA"
+          },
+          {
+            "code": "Orthopnea",
+            "display": "ORTHOPNEA"
+          },
+          {
+            "code": "Palpitations",
+            "display": "PALPITATIONS"
+          },
+          {
+            "code": "SkinRashes",
+            "display": "SKIN RASHES"
+          },
+          {
+            "code": "StoolBloodyBlackTarryMucoid",
+            "display": "STOOL, BLOODY/BLACK TARRY/MUCOID"
+          },
+          {
+            "code": "Sweating",
+            "display": "SWEATING"
+          },
+          {
+            "code": "Seizures",
+            "display": "SEIZURES"
+          },
+          {
+            "code": "Urgency",
+            "display": "URGENCY"
+          },
+          {
+            "code": "VomitingNausea",
+            "display": "VOMITING/NAUSEA"
+          },
+          {
+            "code": "WeightLoss",
+            "display": "WEIGHT LOSS"
+          },
+          {
+            "code": "Fever",
+            "display": "FEVER"
+          },
+          {
+            "code": "Pain",
+            "display": "PAIN"
+          },
+          {
+            "code": "Others",
+            "display": "OTHERS"
+          },
+          {
+            "code": "AwakeAndAlert",
+            "display": "Awake and Alert"
+          },
+          {
+            "code": "AlteredSensorium",
+            "display": "Altered Sensorium"
+          },
+          {
+            "code": "AnictericSclerae",
+            "display": "Anicteric sclerae"
+          },
+          {
+            "code": "Exudates",
+            "display": "Exudates"
+          },
+          {
+            "code": "EssentiallyNormal",
+            "display": "Essentially Normal"
+          },
+          {
+            "code": "AbnormalPupillaryReaction",
+            "display": "Abnormal pupillary reaction"
+          },
+          {
+            "code": "CervicalLymphadenopathy",
+            "display": "Cervical lympadenopathy"
+          }
+        ]
+      }
+    ]
+  }
+}

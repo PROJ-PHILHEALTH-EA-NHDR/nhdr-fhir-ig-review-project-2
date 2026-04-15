@@ -1,0 +1,140 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <url value="https://fhirlab.net/guide/Implementation-Guide-for-Philippine-Core" />
+  <version value="1.0.0"/>
+  <name value="Implementation Guide for the Philippine Core" />
+  <status value="draft" />
+  <packageId value="implementation.guide.nhdr"/>
+  <fhirVersion value="4.0.1" />
+  <definition>
+    <page>
+      <nameUrl value="Home" />
+      <title value="Home" />
+      <generation value="generated" />
+      <page>
+        <nameUrl value="Home/Base" />
+        <title value="Base" />
+        <generation value="generated" />
+        <page>
+          <nameUrl value="Home/Base/Patient.page.md" />
+          <title value="Patient" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Base/Practitioner.page.md" />
+          <title value="Practitioner" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Base/PractitionerRole.page.md" />
+          <title value="PractitionerRole" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Base/Organization.page.md" />
+          <title value="Organization" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Base/Encounter.page.md" />
+          <title value="Encounter" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Base/Location.page.md" />
+          <title value="Location" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Base/Appointment.page.md" />
+          <title value="Appointment" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Base/Person.page.md" />
+          <title value="Person" />
+          <generation value="markdown" />
+        </page>
+      </page>
+      <page>
+        <nameUrl value="Home/Clinical" />
+        <title value="Clinical" />
+        <generation value="generated" />
+        <page>
+          <nameUrl value="Home/Clinical/Condition.page.md" />
+          <title value="Condition" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Clinical/Procedure.page.md" />
+          <title value="Procedure" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Clinical/Observation.page.md" />
+          <title value="Observation" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Clinical/Specimen.page.md" />
+          <title value="Specimen" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Clinical/DiagnosticReport.page.md" />
+          <title value="DiagnosticReport" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Clinical/MedicationAdministration.page.md" />
+          <title value="MedicationAdministration" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Clinical/MedicationStatement.page.md" />
+          <title value="MedicationStatement" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Clinical/Immunization.page.md" />
+          <title value="Immunization" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Clinical/Medication.page.md" />
+          <title value="Medication" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Clinical/CarePlan.page.md" />
+          <title value="CarePlan" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Clinical/MedicationDispense.page.md" />
+          <title value="MedicationDispense" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Clinical/ServiceRequest.page.md" />
+          <title value="ServiceRequest" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Clinical/QuestionnaireResponse.page.md" />
+          <title value="QuestionnaireResponse" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Clinical/AllergyIntolerance.page.md" />
+          <title value="AllergyIntolerance" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Home/Clinical/FamilyMemberHistory.page.md" />
+          <title value="FamilyMemberHistory" />
+          <generation value="markdown" />
+        </page>
+      </page>
+    </page>
+  </definition>
+</ImplementationGuide>
